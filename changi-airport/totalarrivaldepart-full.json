@@ -1,0 +1,2417 @@
+[
+  {
+    "month": "1980-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6501
+  },
+  {
+    "month": "1980-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6112
+  },
+  {
+    "month": "1980-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6391
+  },
+  {
+    "month": "1980-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6247
+  },
+  {
+    "month": "1980-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6301
+  },
+  {
+    "month": "1980-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6094
+  },
+  {
+    "month": "1980-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6279
+  },
+  {
+    "month": "1980-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6553
+  },
+  {
+    "month": "1980-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6245
+  },
+  {
+    "month": "1980-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6461
+  },
+  {
+    "month": "1980-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6326
+  },
+  {
+    "month": "1980-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6461
+  },
+  {
+    "month": "1981-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6294
+  },
+  {
+    "month": "1981-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5784
+  },
+  {
+    "month": "1981-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6258
+  },
+  {
+    "month": "1981-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5752
+  },
+  {
+    "month": "1981-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5872
+  },
+  {
+    "month": "1981-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5757
+  },
+  {
+    "month": "1981-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6009
+  },
+  {
+    "month": "1981-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6069
+  },
+  {
+    "month": "1981-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5849
+  },
+  {
+    "month": "1981-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5944
+  },
+  {
+    "month": "1981-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5755
+  },
+  {
+    "month": "1981-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6022
+  },
+  {
+    "month": "1982-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5958
+  },
+  {
+    "month": "1982-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5375
+  },
+  {
+    "month": "1982-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5921
+  },
+  {
+    "month": "1982-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5638
+  },
+  {
+    "month": "1982-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5590
+  },
+  {
+    "month": "1982-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5545
+  },
+  {
+    "month": "1982-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5738
+  },
+  {
+    "month": "1982-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5777
+  },
+  {
+    "month": "1982-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5641
+  },
+  {
+    "month": "1982-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5754
+  },
+  {
+    "month": "1982-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5457
+  },
+  {
+    "month": "1982-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5765
+  },
+  {
+    "month": "1983-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5671
+  },
+  {
+    "month": "1983-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5282
+  },
+  {
+    "month": "1983-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5649
+  },
+  {
+    "month": "1983-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5484
+  },
+  {
+    "month": "1983-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5685
+  },
+  {
+    "month": "1983-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5498
+  },
+  {
+    "month": "1983-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5658
+  },
+  {
+    "month": "1983-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5828
+  },
+  {
+    "month": "1983-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5674
+  },
+  {
+    "month": "1983-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5815
+  },
+  {
+    "month": "1983-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5556
+  },
+  {
+    "month": "1983-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5794
+  },
+  {
+    "month": "1984-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5746
+  },
+  {
+    "month": "1984-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5512
+  },
+  {
+    "month": "1984-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5795
+  },
+  {
+    "month": "1984-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5702
+  },
+  {
+    "month": "1984-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5932
+  },
+  {
+    "month": "1984-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5875
+  },
+  {
+    "month": "1984-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5998
+  },
+  {
+    "month": "1984-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6112
+  },
+  {
+    "month": "1984-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5902
+  },
+  {
+    "month": "1984-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5988
+  },
+  {
+    "month": "1984-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5925
+  },
+  {
+    "month": "1984-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6187
+  },
+  {
+    "month": "1985-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6108
+  },
+  {
+    "month": "1985-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5688
+  },
+  {
+    "month": "1985-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6181
+  },
+  {
+    "month": "1985-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6061
+  },
+  {
+    "month": "1985-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6157
+  },
+  {
+    "month": "1985-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6104
+  },
+  {
+    "month": "1985-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6147
+  },
+  {
+    "month": "1985-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6374
+  },
+  {
+    "month": "1985-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6139
+  },
+  {
+    "month": "1985-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6137
+  },
+  {
+    "month": "1985-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5932
+  },
+  {
+    "month": "1985-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6195
+  },
+  {
+    "month": "1986-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6127
+  },
+  {
+    "month": "1986-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5696
+  },
+  {
+    "month": "1986-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6212
+  },
+  {
+    "month": "1986-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6045
+  },
+  {
+    "month": "1986-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6268
+  },
+  {
+    "month": "1986-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6049
+  },
+  {
+    "month": "1986-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6247
+  },
+  {
+    "month": "1986-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6358
+  },
+  {
+    "month": "1986-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6003
+  },
+  {
+    "month": "1986-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6039
+  },
+  {
+    "month": "1986-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5863
+  },
+  {
+    "month": "1986-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6115
+  },
+  {
+    "month": "1987-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6161
+  },
+  {
+    "month": "1987-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 5619
+  },
+  {
+    "month": "1987-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6340
+  },
+  {
+    "month": "1987-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6113
+  },
+  {
+    "month": "1987-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6422
+  },
+  {
+    "month": "1987-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6288
+  },
+  {
+    "month": "1987-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6508
+  },
+  {
+    "month": "1987-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6763
+  },
+  {
+    "month": "1987-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6320
+  },
+  {
+    "month": "1987-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6464
+  },
+  {
+    "month": "1987-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6392
+  },
+  {
+    "month": "1987-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6886
+  },
+  {
+    "month": "1988-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6729
+  },
+  {
+    "month": "1988-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6516
+  },
+  {
+    "month": "1988-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6727
+  },
+  {
+    "month": "1988-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6698
+  },
+  {
+    "month": "1988-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6975
+  },
+  {
+    "month": "1988-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6856
+  },
+  {
+    "month": "1988-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7147
+  },
+  {
+    "month": "1988-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7240
+  },
+  {
+    "month": "1988-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6792
+  },
+  {
+    "month": "1988-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7048
+  },
+  {
+    "month": "1988-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7069
+  },
+  {
+    "month": "1988-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7133
+  },
+  {
+    "month": "1989-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6952
+  },
+  {
+    "month": "1989-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 6516
+  },
+  {
+    "month": "1989-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7145
+  },
+  {
+    "month": "1989-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7190
+  },
+  {
+    "month": "1989-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7365
+  },
+  {
+    "month": "1989-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7209
+  },
+  {
+    "month": "1989-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7342
+  },
+  {
+    "month": "1989-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7343
+  },
+  {
+    "month": "1989-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7260
+  },
+  {
+    "month": "1989-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7562
+  },
+  {
+    "month": "1989-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7593
+  },
+  {
+    "month": "1989-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7944
+  },
+  {
+    "month": "1990-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 8070
+  },
+  {
+    "month": "1990-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7358
+  },
+  {
+    "month": "1990-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 8130
+  },
+  {
+    "month": "1990-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7891
+  },
+  {
+    "month": "1990-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 8250
+  },
+  {
+    "month": "1990-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7930
+  },
+  {
+    "month": "1990-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 8123
+  },
+  {
+    "month": "1990-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 8214
+  },
+  {
+    "month": "1990-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 8009
+  },
+  {
+    "month": "1990-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 8337
+  },
+  {
+    "month": "1990-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 8433
+  },
+  {
+    "month": "1990-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 8930
+  },
+  {
+    "month": "1991-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 8615
+  },
+  {
+    "month": "1991-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 7883
+  },
+  {
+    "month": "1991-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 8600
+  },
+  {
+    "month": "1991-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 8572
+  },
+  {
+    "month": "1991-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 9015
+  },
+  {
+    "month": "1991-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 8981
+  },
+  {
+    "month": "1991-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 9198
+  },
+  {
+    "month": "1991-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 9303
+  },
+  {
+    "month": "1991-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 9033
+  },
+  {
+    "month": "1991-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 9455
+  },
+  {
+    "month": "1991-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 9733
+  },
+  {
+    "month": "1991-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 10340
+  },
+  {
+    "month": "1992-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 10196
+  },
+  {
+    "month": "1992-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 9736
+  },
+  {
+    "month": "1992-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 10093
+  },
+  {
+    "month": "1992-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 10001
+  },
+  {
+    "month": "1992-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 10475
+  },
+  {
+    "month": "1992-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 10222
+  },
+  {
+    "month": "1992-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 10703
+  },
+  {
+    "month": "1992-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 10741
+  },
+  {
+    "month": "1992-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 10415
+  },
+  {
+    "month": "1992-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 10752
+  },
+  {
+    "month": "1992-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 10804
+  },
+  {
+    "month": "1992-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11388
+  },
+  {
+    "month": "1993-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11322
+  },
+  {
+    "month": "1993-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 10020
+  },
+  {
+    "month": "1993-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11192
+  },
+  {
+    "month": "1993-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11181
+  },
+  {
+    "month": "1993-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11544
+  },
+  {
+    "month": "1993-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11308
+  },
+  {
+    "month": "1993-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11681
+  },
+  {
+    "month": "1993-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11702
+  },
+  {
+    "month": "1993-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11235
+  },
+  {
+    "month": "1993-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11729
+  },
+  {
+    "month": "1993-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11592
+  },
+  {
+    "month": "1993-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12256
+  },
+  {
+    "month": "1994-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11985
+  },
+  {
+    "month": "1994-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11212
+  },
+  {
+    "month": "1994-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12091
+  },
+  {
+    "month": "1994-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11797
+  },
+  {
+    "month": "1994-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12175
+  },
+  {
+    "month": "1994-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11920
+  },
+  {
+    "month": "1994-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12241
+  },
+  {
+    "month": "1994-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12242
+  },
+  {
+    "month": "1994-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11941
+  },
+  {
+    "month": "1994-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12413
+  },
+  {
+    "month": "1994-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12363
+  },
+  {
+    "month": "1994-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12954
+  },
+  {
+    "month": "1995-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12818
+  },
+  {
+    "month": "1995-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11755
+  },
+  {
+    "month": "1995-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13002
+  },
+  {
+    "month": "1995-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12806
+  },
+  {
+    "month": "1995-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13047
+  },
+  {
+    "month": "1995-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12773
+  },
+  {
+    "month": "1995-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13195
+  },
+  {
+    "month": "1995-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13237
+  },
+  {
+    "month": "1995-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12785
+  },
+  {
+    "month": "1995-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13303
+  },
+  {
+    "month": "1995-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13461
+  },
+  {
+    "month": "1995-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14152
+  },
+  {
+    "month": "1996-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13768
+  },
+  {
+    "month": "1996-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13259
+  },
+  {
+    "month": "1996-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13823
+  },
+  {
+    "month": "1996-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13606
+  },
+  {
+    "month": "1996-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14165
+  },
+  {
+    "month": "1996-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13790
+  },
+  {
+    "month": "1996-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14150
+  },
+  {
+    "month": "1996-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14094
+  },
+  {
+    "month": "1996-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13588
+  },
+  {
+    "month": "1996-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14091
+  },
+  {
+    "month": "1996-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13857
+  },
+  {
+    "month": "1996-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14558
+  },
+  {
+    "month": "1997-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14380
+  },
+  {
+    "month": "1997-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13299
+  },
+  {
+    "month": "1997-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14593
+  },
+  {
+    "month": "1997-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14138
+  },
+  {
+    "month": "1997-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14667
+  },
+  {
+    "month": "1997-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14319
+  },
+  {
+    "month": "1997-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14700
+  },
+  {
+    "month": "1997-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14634
+  },
+  {
+    "month": "1997-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14161
+  },
+  {
+    "month": "1997-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14505
+  },
+  {
+    "month": "1997-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14354
+  },
+  {
+    "month": "1997-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14922
+  },
+  {
+    "month": "1998-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14684
+  },
+  {
+    "month": "1998-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12882
+  },
+  {
+    "month": "1998-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14033
+  },
+  {
+    "month": "1998-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13560
+  },
+  {
+    "month": "1998-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14287
+  },
+  {
+    "month": "1998-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13431
+  },
+  {
+    "month": "1998-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13782
+  },
+  {
+    "month": "1998-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13706
+  },
+  {
+    "month": "1998-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13348
+  },
+  {
+    "month": "1998-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13957
+  },
+  {
+    "month": "1998-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13601
+  },
+  {
+    "month": "1998-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13971
+  },
+  {
+    "month": "1999-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13831
+  },
+  {
+    "month": "1999-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12675
+  },
+  {
+    "month": "1999-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14001
+  },
+  {
+    "month": "1999-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13604
+  },
+  {
+    "month": "1999-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14044
+  },
+  {
+    "month": "1999-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13796
+  },
+  {
+    "month": "1999-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14089
+  },
+  {
+    "month": "1999-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14008
+  },
+  {
+    "month": "1999-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13605
+  },
+  {
+    "month": "1999-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14080
+  },
+  {
+    "month": "1999-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13780
+  },
+  {
+    "month": "1999-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14448
+  },
+  {
+    "month": "2000-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14152
+  },
+  {
+    "month": "2000-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13648
+  },
+  {
+    "month": "2000-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14517
+  },
+  {
+    "month": "2000-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14189
+  },
+  {
+    "month": "2000-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14523
+  },
+  {
+    "month": "2000-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14324
+  },
+  {
+    "month": "2000-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14726
+  },
+  {
+    "month": "2000-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14796
+  },
+  {
+    "month": "2000-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14401
+  },
+  {
+    "month": "2000-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14941
+  },
+  {
+    "month": "2000-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14601
+  },
+  {
+    "month": "2000-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15138
+  },
+  {
+    "month": "2001-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15253
+  },
+  {
+    "month": "2001-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13699
+  },
+  {
+    "month": "2001-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15284
+  },
+  {
+    "month": "2001-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14893
+  },
+  {
+    "month": "2001-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15503
+  },
+  {
+    "month": "2001-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15092
+  },
+  {
+    "month": "2001-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15393
+  },
+  {
+    "month": "2001-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15377
+  },
+  {
+    "month": "2001-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14818
+  },
+  {
+    "month": "2001-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14898
+  },
+  {
+    "month": "2001-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14302
+  },
+  {
+    "month": "2001-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14848
+  },
+  {
+    "month": "2002-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14563
+  },
+  {
+    "month": "2002-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13227
+  },
+  {
+    "month": "2002-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14587
+  },
+  {
+    "month": "2002-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14187
+  },
+  {
+    "month": "2002-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14784
+  },
+  {
+    "month": "2002-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14299
+  },
+  {
+    "month": "2002-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14796
+  },
+  {
+    "month": "2002-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14867
+  },
+  {
+    "month": "2002-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14420
+  },
+  {
+    "month": "2002-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15050
+  },
+  {
+    "month": "2002-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14666
+  },
+  {
+    "month": "2002-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15374
+  },
+  {
+    "month": "2003-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15268
+  },
+  {
+    "month": "2003-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13977
+  },
+  {
+    "month": "2003-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15254
+  },
+  {
+    "month": "2003-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11780
+  },
+  {
+    "month": "2003-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 9555
+  },
+  {
+    "month": "2003-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 9859
+  },
+  {
+    "month": "2003-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 11727
+  },
+  {
+    "month": "2003-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12377
+  },
+  {
+    "month": "2003-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 12498
+  },
+  {
+    "month": "2003-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13422
+  },
+  {
+    "month": "2003-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14005
+  },
+  {
+    "month": "2003-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14624
+  },
+  {
+    "month": "2004-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14695
+  },
+  {
+    "month": "2004-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 13481
+  },
+  {
+    "month": "2004-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14724
+  },
+  {
+    "month": "2004-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 14768
+  },
+  {
+    "month": "2004-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15490
+  },
+  {
+    "month": "2004-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15273
+  },
+  {
+    "month": "2004-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15809
+  },
+  {
+    "month": "2004-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15850
+  },
+  {
+    "month": "2004-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15569
+  },
+  {
+    "month": "2004-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 16352
+  },
+  {
+    "month": "2004-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 16094
+  },
+  {
+    "month": "2004-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 16828
+  },
+  {
+    "month": "2005-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 16666
+  },
+  {
+    "month": "2005-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 15010
+  },
+  {
+    "month": "2005-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 16649
+  },
+  {
+    "month": "2005-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 16813
+  },
+  {
+    "month": "2005-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17431
+  },
+  {
+    "month": "2005-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17201
+  },
+  {
+    "month": "2005-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17523
+  },
+  {
+    "month": "2005-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17400
+  },
+  {
+    "month": "2005-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 16834
+  },
+  {
+    "month": "2005-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17371
+  },
+  {
+    "month": "2005-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17324
+  },
+  {
+    "month": "2005-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17916
+  },
+  {
+    "month": "2006-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17780
+  },
+  {
+    "month": "2006-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 16043
+  },
+  {
+    "month": "2006-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18164
+  },
+  {
+    "month": "2006-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17672
+  },
+  {
+    "month": "2006-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17962
+  },
+  {
+    "month": "2006-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17561
+  },
+  {
+    "month": "2006-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18018
+  },
+  {
+    "month": "2006-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17992
+  },
+  {
+    "month": "2006-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17625
+  },
+  {
+    "month": "2006-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18398
+  },
+  {
+    "month": "2006-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18022
+  },
+  {
+    "month": "2006-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18987
+  },
+  {
+    "month": "2007-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18452
+  },
+  {
+    "month": "2007-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 16661
+  },
+  {
+    "month": "2007-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18611
+  },
+  {
+    "month": "2007-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18021
+  },
+  {
+    "month": "2007-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18561
+  },
+  {
+    "month": "2007-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18177
+  },
+  {
+    "month": "2007-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18622
+  },
+  {
+    "month": "2007-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18643
+  },
+  {
+    "month": "2007-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18194
+  },
+  {
+    "month": "2007-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18950
+  },
+  {
+    "month": "2007-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18515
+  },
+  {
+    "month": "2007-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19339
+  },
+  {
+    "month": "2008-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18868
+  },
+  {
+    "month": "2008-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18104
+  },
+  {
+    "month": "2008-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19370
+  },
+  {
+    "month": "2008-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 18884
+  },
+  {
+    "month": "2008-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19590
+  },
+  {
+    "month": "2008-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19103
+  },
+  {
+    "month": "2008-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19697
+  },
+  {
+    "month": "2008-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19673
+  },
+  {
+    "month": "2008-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19009
+  },
+  {
+    "month": "2008-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19664
+  },
+  {
+    "month": "2008-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19193
+  },
+  {
+    "month": "2008-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 20771
+  },
+  {
+    "month": "2009-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 20373
+  },
+  {
+    "month": "2009-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 17615
+  },
+  {
+    "month": "2009-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19559
+  },
+  {
+    "month": "2009-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19625
+  },
+  {
+    "month": "2009-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19711
+  },
+  {
+    "month": "2009-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19071
+  },
+  {
+    "month": "2009-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 20264
+  },
+  {
+    "month": "2009-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 20495
+  },
+  {
+    "month": "2009-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 20115
+  },
+  {
+    "month": "2009-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 20986
+  },
+  {
+    "month": "2009-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 20661
+  },
+  {
+    "month": "2009-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 21885
+  },
+  {
+    "month": "2010-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 21502
+  },
+  {
+    "month": "2010-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 19617
+  },
+  {
+    "month": "2010-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 21604
+  },
+  {
+    "month": "2010-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 21303
+  },
+  {
+    "month": "2010-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 22151
+  },
+  {
+    "month": "2010-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 21833
+  },
+  {
+    "month": "2010-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 22593
+  },
+  {
+    "month": "2010-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 22368
+  },
+  {
+    "month": "2010-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 21923
+  },
+  {
+    "month": "2010-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 22488
+  },
+  {
+    "month": "2010-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 22372
+  },
+  {
+    "month": "2010-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 23839
+  },
+  {
+    "month": "2011-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 24000
+  },
+  {
+    "month": "2011-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 22013
+  },
+  {
+    "month": "2011-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 24403
+  },
+  {
+    "month": "2011-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 24266
+  },
+  {
+    "month": "2011-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 24994
+  },
+  {
+    "month": "2011-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 25059
+  },
+  {
+    "month": "2011-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 25908
+  },
+  {
+    "month": "2011-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 25708
+  },
+  {
+    "month": "2011-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 25513
+  },
+  {
+    "month": "2011-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 26270
+  },
+  {
+    "month": "2011-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 25923
+  },
+  {
+    "month": "2011-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 27654
+  },
+  {
+    "month": "2012-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 27584
+  },
+  {
+    "month": "2012-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 24903
+  },
+  {
+    "month": "2012-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 26981
+  },
+  {
+    "month": "2012-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 26410
+  },
+  {
+    "month": "2012-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 26990
+  },
+  {
+    "month": "2012-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 26662
+  },
+  {
+    "month": "2012-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 27093
+  },
+  {
+    "month": "2012-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 27381
+  },
+  {
+    "month": "2012-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 26526
+  },
+  {
+    "month": "2012-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 27641
+  },
+  {
+    "month": "2012-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 27593
+  },
+  {
+    "month": "2012-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28958
+  },
+  {
+    "month": "2013-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28203
+  },
+  {
+    "month": "2013-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 25939
+  },
+  {
+    "month": "2013-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28423
+  },
+  {
+    "month": "2013-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 27544
+  },
+  {
+    "month": "2013-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28451
+  },
+  {
+    "month": "2013-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28283
+  },
+  {
+    "month": "2013-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28955
+  },
+  {
+    "month": "2013-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29613
+  },
+  {
+    "month": "2013-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28441
+  },
+  {
+    "month": "2013-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29485
+  },
+  {
+    "month": "2013-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29505
+  },
+  {
+    "month": "2013-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 30923
+  },
+  {
+    "month": "2014-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 30353
+  },
+  {
+    "month": "2014-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 26764
+  },
+  {
+    "month": "2014-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29141
+  },
+  {
+    "month": "2014-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28358
+  },
+  {
+    "month": "2014-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28933
+  },
+  {
+    "month": "2014-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28130
+  },
+  {
+    "month": "2014-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28205
+  },
+  {
+    "month": "2014-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28356
+  },
+  {
+    "month": "2014-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 27024
+  },
+  {
+    "month": "2014-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28380
+  },
+  {
+    "month": "2014-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28031
+  },
+  {
+    "month": "2014-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29711
+  },
+  {
+    "month": "2015-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28779
+  },
+  {
+    "month": "2015-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 26491
+  },
+  {
+    "month": "2015-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28793
+  },
+  {
+    "month": "2015-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28256
+  },
+  {
+    "month": "2015-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29042
+  },
+  {
+    "month": "2015-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28531
+  },
+  {
+    "month": "2015-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29412
+  },
+  {
+    "month": "2015-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29606
+  },
+  {
+    "month": "2015-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28464
+  },
+  {
+    "month": "2015-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29610
+  },
+  {
+    "month": "2015-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28729
+  },
+  {
+    "month": "2015-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 30621
+  },
+  {
+    "month": "2016-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 30145
+  },
+  {
+    "month": "2016-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28518
+  },
+  {
+    "month": "2016-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 30125
+  },
+  {
+    "month": "2016-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29460
+  },
+  {
+    "month": "2016-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 30221
+  },
+  {
+    "month": "2016-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29345
+  },
+  {
+    "month": "2016-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 30793
+  },
+  {
+    "month": "2016-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 30257
+  },
+  {
+    "month": "2016-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29330
+  },
+  {
+    "month": "2016-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 30614
+  },
+  {
+    "month": "2016-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29708
+  },
+  {
+    "month": "2016-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31974
+  },
+  {
+    "month": "2017-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31596
+  },
+  {
+    "month": "2017-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 28032
+  },
+  {
+    "month": "2017-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 30916
+  },
+  {
+    "month": "2017-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 30569
+  },
+  {
+    "month": "2017-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31197
+  },
+  {
+    "month": "2017-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 30915
+  },
+  {
+    "month": "2017-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31908
+  },
+  {
+    "month": "2017-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31747
+  },
+  {
+    "month": "2017-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 30492
+  },
+  {
+    "month": "2017-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31733
+  },
+  {
+    "month": "2017-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31140
+  },
+  {
+    "month": "2017-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 32956
+  },
+  {
+    "month": "2018-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 32486
+  },
+  {
+    "month": "2018-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29701
+  },
+  {
+    "month": "2018-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 32585
+  },
+  {
+    "month": "2018-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31990
+  },
+  {
+    "month": "2018-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 32332
+  },
+  {
+    "month": "2018-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31874
+  },
+  {
+    "month": "2018-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 32706
+  },
+  {
+    "month": "2018-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 32888
+  },
+  {
+    "month": "2018-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31395
+  },
+  {
+    "month": "2018-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 32759
+  },
+  {
+    "month": "2018-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31909
+  },
+  {
+    "month": "2018-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 33417
+  },
+  {
+    "month": "2019-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 32729
+  },
+  {
+    "month": "2019-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 29894
+  },
+  {
+    "month": "2019-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 32371
+  },
+  {
+    "month": "2019-04",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31454
+  },
+  {
+    "month": "2019-05",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31671
+  },
+  {
+    "month": "2019-06",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31391
+  },
+  {
+    "month": "2019-07",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 32389
+  },
+  {
+    "month": "2019-08",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 32364
+  },
+  {
+    "month": "2019-09",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31179
+  },
+  {
+    "month": "2019-10",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31958
+  },
+  {
+    "month": "2019-11",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 31598
+  },
+  {
+    "month": "2019-12",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 33344
+  },
+  {
+    "month": "2020-01",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 33435
+  },
+  {
+    "month": "2020-02",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 26231
+  },
+  {
+    "month": "2020-03",
+    "level_1": "Total Aircraft Arrivals And Departures",
+    "value": 16223
+  }
+]
