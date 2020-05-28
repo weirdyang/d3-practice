@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    /* set the CSS */
+    body {
+        font: 11px sans-serif;
+      }
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+      }
+      .dot {
+        stroke: #000;
+      }
+      .tooltip {
+        position: absolute;
+        width: 200px;
+        height: 28px;
+        pointer-events: none;
+      }
+</style>
+
+<body>
+    <svg width=960 height=500>
+        <text x=40 y=80>Worldwide Gross to Production Budget Ratio vs IMDB Ratings</text>
+      </svg>
+    <!-- load the d3.js library -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script>
+        // set the dimensions and margins of the graph
+        var margin = { top: 180, right: 50, bottom: 50, left: 50 },
+            width = 960,
+            height = 500;
+        
+        
+        // set the ranges
+        var xScale = d3.scaleLinear().range([margin.left, width - margin.right ])
+        var yScale = d3.scaleLinear().range([height - margin.bottom, margin.top ])
+            
+        
+        //customise tooltip
+        var tooltip = d3.select("body")
+            .append("div")
+            .style("position", "absolute")
+            .style("font-family", "sans-serif")
+            .style("font-size", "10px")
+            .style("z-index", "10")
+            .style("visibility", "hidden");
+        // append the svg obgect to the body of the page
+        // appends a 'group' element to 'svg'
+        // moves the 'group' element to the top left margin
+        var svg = d3.select("svg");
+        
+        //set the color
+        var color = d3.scaleOrdinal(d3.schemeCategory20)
+        const url = 'https://gist.githubusercontent.com/captmomo/1371ebb46c5a0a0e16cd388e109cc7d5/raw/4f9ece6a599c7f94a234a35d5cb1f978ca8b327a/Book1.tsv'
+        // Get the data
+        d3.tsv(url, function (error, data) {
+            if (error) throw error;
+            console.log(data)
+            // format the data
+            data.forEach(function (d) {
+                d.movie = d['Movie']
+                d.ratio = +d['Production to Worldwide Ratio']
+                d.rating = +d['IMDB'];
+            });
+
+            var xValue = function(d) { return d.ratio}; // data -> value
+            var yValue = function (d) { return d.rating;};
+            //http://dataforradicals.com/2017/03/20/the-absurdly-illustrated-guide-to-your-first-d3-scatterplot/
+                        // Scale the range of the data
+            //x.domain(d3.extent(data, function (d) { return d.rating; }));
+            //y.domain([0, d3.max(data, function (d) { return d.ratio; })]);
+            xScale.domain([d3.min(data, xValue)-1, d3.max(data ,xValue)+1]);
+            yScale.domain([0, 10]);
+            //yScale.domain([0, 10]);
+            // Add the scatterplot
+            svg.selectAll("dot")
+                  .data(data)
+                .enter().append("circle")
+                  .attr("r", 5)
+                  .attr("cx", function (d) { return xScale(d.ratio); })
+                  .attr("cy", function (d) { return yScale(d.rating); })
+                  .style("fill", function(d,i) { return color(i);}) 
+                  .on("mouseover", function (d) {
+                   return tooltip
+                   .style("visibility", "visible").html(d.movie);
+                })
+                .on("mousemove", function (d) {
+                    return tooltip
+                    .style("top", (d3.event.pageY - 10) + "px")
+                    .style("left", (d3.event.pageX + 10) + "px")
+                    .html(d.movie);
+                })
+                .on("mouseout", function (d) {
+                    return tooltip
+                    .style("visibility", "hidden");
+                });
+            // Add the X Axis
+            //https://bost.ocks.org/mike/bar/3/
+            var xAxis = d3.axisBottom(xScale);
+            var yAxis = d3.axisLeft(yScale);
+            svg.append("g")
+                .attr("transform", `translate(0,${height - margin.bottom})`)
+                .call(xAxis);
+
+            svg.append("text")
+                .attr("class", "label")
+                .attr("x", width)
+                .attr("y", height-6)
+                .style("text-anchor", "end")
+                .text("Worldwide Gross to Production Budget");
+            // Add the Y Axis
+            svg.append("g")
+                .attr("transform", `translate(${margin.left},0)`)
+                .call(yAxis);
+            
+            svg.append("text")
+                .attr("class", "label")
+                .attr("y", 6)
+                .attr("x", 0 - margin.top)
+                .attr("transform", "rotate(-90)")
+                .attr("dy", ".71em")
+                .style("text-anchor", "end")
+                .text("IMDB Rating");
+        });
+    </script>
+</body>
