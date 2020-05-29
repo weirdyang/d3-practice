@@ -124,7 +124,7 @@
 			// 	[d3.min(data, function (d) { new Date(d.month) }),
 				// d3.max(data, function (d) { new Date(d.month) })]);
 			y.domain(
-				[d3.min(data, function (d) { return d.value }) - 1000,
+				[0,
 				d3.max(data, function (d) { return d.value }) + 1000]);
 			const yAxis = d3.axisLeft(y).ticks(3).tickFormat(function (d) { return + d })
 			const xAxis = d3.axisBottom(x)
@@ -163,6 +163,7 @@
 				return result
 			})
 		}
+		let recentData = false;
 		const all = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-full.json';
 		const recent = "https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-1920.json"
 		d3.json(all, function (error, json) {
@@ -172,11 +173,13 @@
 		});
 
 		const redraw = function(){
-			fetchData(recent)
+			let dataUrl = recentData ? all : recent;
+			fetchData(dataUrl)
 				.then(data =>{
 					console.log(data);
 					redrawChart(data);
 				})
+			recentData = !recentData;
 		}
 		const redrawChart = function(data){
 			drawAxis(data)
