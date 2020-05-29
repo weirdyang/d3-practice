@@ -76,6 +76,11 @@
             xScale.domain([d3.min(data, xValue)-1, d3.max(data ,xValue)+1]);
             yScale.domain([0, 10]);
             //yScale.domain([0, 10]);
+            const tooltipContent = function createToolTip(model){
+                return `<p>${model.movie}</p>
+                <p>Ratio: ${parseFloat(model.ratio).toFixed(2)}</p>
+                <p>IMDB Score: ${model.rating}</p>`
+            }
             // Add the scatterplot
             svg.selectAll("dot")
                   .data(data)
@@ -86,13 +91,13 @@
                   .style("fill", function(d,i) { return color(i);}) 
                   .on("mouseover", function (d) {
                    return tooltip
-                   .style("visibility", "visible").html(d.movie);
+                   .style("visibility", "visible").html(tooltipContent(d));
                 })
                 .on("mousemove", function (d) {
                     return tooltip
                     .style("top", (d3.event.pageY - 10) + "px")
                     .style("left", (d3.event.pageX + 10) + "px")
-                    .html(d.movie);
+                    .html(tooltipContent(d));
                 })
                 .on("mouseout", function (d) {
                     return tooltip
