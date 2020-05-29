@@ -79,7 +79,7 @@
             const tooltipContent = function createToolTip(model){
                 return `<p>${model.movie}</p>
                 <p>Ratio: ${parseFloat(model.ratio).toFixed(2)}</p>
-                <p>IMDB Score: ${model.rating}</p>`
+                <p>IMDB Score: ${parseFloat(model.rating).toFixed(2)}</p>`
             }
             // Add the scatterplot
             svg.selectAll("dot")
