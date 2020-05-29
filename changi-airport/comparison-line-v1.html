@@ -117,9 +117,7 @@
           .attr('class', 'lineChart')
 
         svg.select("g.lineChart")
-          .selectAll("path.segment")
-          .data(json)
-          .enter()
+          .datum(json)
           .append("path")
           .attr("d", line(json))
         //   .each(function (d){
