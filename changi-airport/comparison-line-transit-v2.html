@@ -168,82 +168,9 @@
                 .attr("transform", "translate(0," + (height - margin.bottom) + ")")
                 .call(xAxis);
 
-            /* Code below relevant for annotations */
-            const annotations = [{
-                note: { label: "Circuit Breaker" },
-                subject: {
-                    y1: margin.top,
-                    y2: height - margin.bottom
-                },
-                y: margin.top,
-                data: { x: "4/7/2020" } //position the x based on an x scale
-            },
-            {
-                note: { label: "MOM: Companies must allow staff to work from home", wrap: 100 },
-                subject: {
-                    y1: margin.top,
-                    y2: height - margin.bottom
-                },
-                y: margin.top,
-                dx: -50,
-                data: { x: "3/31/2020" }
-            },
-            {
-                note: {
-                    label: "Stock Split 2:1",
-                    lineType: "none",
-                    orientation: "leftRight",
-                    "align": "middle"
-                },
-                className: "anomaly",
-                type: d3.annotationCalloutCircle,
-                subject: { radius: 35 },
-                data: { x: "6/21/2000", y: 76 },
-                dx: 40
-            },
-            {
-                note: { label: "Above 1500 comments", wrap: 60, },
-                className: "above",
-                disable: ["connector"],
-                subject: {
-                    x1: x(new Date('4/1/2020')),
-                    x2: x(new Date('5/25/2020'))
-                },
-                x: x(new Date('4/1/2020')),
-                dx: 250,
-                data: { y: 1500 }
-            }
 
-            ]
 
-            //An example of taking the XYThreshold and merging it 
-            //with custom settings so you don't have to 
-            //repeat yourself in the annotations Objects
-            const type = d3.annotationCustomType(
-                d3.annotationXYThreshold,
-                {
-                    "note": {
-                        "lineType": "none",
-                        "orientation": "top",
-                        "align": "middle"
-                    }
-                }
-            )
 
-            const makeAnnotations = d3.annotation()
-                .type(type)
-                //Gives you access to any data objects in the annotations array
-                .accessors({
-                    x: function (d) { return x(new Date(d.x)) },
-                    y: function (d) { return y(d.y) }
-                })
-                .annotations(annotations)
-                .textWrap(30)
-
-            //   d3.select("svg")
-            //     .append("g")
-            //     .attr("class", "annotation-group")
-            //     .call(makeAnnotations)
 
         });
 

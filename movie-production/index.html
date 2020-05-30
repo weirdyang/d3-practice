@@ -53,6 +53,8 @@
         // moves the 'group' element to the top left margin
         var svg = d3.select("svg");
         
+        var xValue = function(d) { return d.ratio}; // data -> value
+        var yValue = function (d) { return d.rating;};
         //set the color
         var color = d3.scaleOrdinal(d3.schemeCategory20)
         const url = 'https://gist.githubusercontent.com/captmomo/1371ebb46c5a0a0e16cd388e109cc7d5/raw/4f9ece6a599c7f94a234a35d5cb1f978ca8b327a/Book1.tsv'
@@ -67,8 +69,7 @@
                 d.rating = +d['IMDB'];
             });
 
-            var xValue = function(d) { return d.ratio}; // data -> value
-            var yValue = function (d) { return d.rating;};
+            
             //http://dataforradicals.com/2017/03/20/the-absurdly-illustrated-guide-to-your-first-d3-scatterplot/
                         // Scale the range of the data
             //x.domain(d3.extent(data, function (d) { return d.rating; }));
