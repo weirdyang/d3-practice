@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    /* set the CSS */
+
+    body {
+        font-size: 11px;
+        font-family: sans-serif;
+    }
+    :root {
+      --line-chart-color: #607D8B;
+      --annotation-context-color: #546E7A;
+      --annotation-badge-color:white;
+      --annotation-color: #E8336D;
+    }
+    path {
+        stroke: steelblue;
+        stroke-width: 1;
+        fill: none;
+    }
+
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: grey;
+        stroke-width: 1;
+        shape-rendering: crispEdges;
+    }
+
+    .annotation path {
+        stroke: var(--annotation-badge-color);
+    }
+
+    .annotation:not(.above):not(.anomaly) path {
+        stroke-dasharray: 1, 3;
+    }
+
+    .annotation text {
+        fill: var(--annotation-badge-color);
+    }
+
+    .annotation-note-bg {
+        fill: rgba(0, 0, 0, 0);
+    }
+
+    .annotation-note-title,
+    text.title {
+        font-weight: bold;
+    }
+
+    svg .annotation.rect text {
+        fill: var(--annotation-context-color);
+        font-size: .6em;
+        text-transform: uppercase;
+    }
+
+    svg .annotation.callout.rect path.subject {
+        fill-opacity: .1;
+    }
+
+    svg .annotation.callout.rect path.subject {
+        fill: var(--annotation-context-color);
+        stroke: none;
+        stroke-dasharray: 2, 8;
+    }
+
+    svg .annotation.badge .annotation-subject path {
+        fill: var(--annotation-color);
+        stroke-width: 0px;
+        stroke-dasharray: none;
+    }
+
+    svg .annotation.badge path.subject-pointer {
+        stroke-width: 0px;
+    }
+
+    svg .annotation.badge text {
+        font-size: .7em;
+    }
+
+    svg text.legend {
+        text-anchor: start;
+        fill: var(--annotation-color)
+    }
+
+    text.title {
+        font-size: 1.2em;
+    }
+    .svg-container {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	padding-bottom: 100%; /* aspect ratio */
+	vertical-align: top;
+	overflow: scroll;
+    }
+    .svg-content-responsive {
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	left: 0;
+    }
+
+</style>
+<body>
+<div id='chart' class="svg-container"></div>
+<!-- load the d3.js library -->    
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.1.0/d3-annotation.min.js"></script>
+
+<script>
+
+// Set the dimensions of the canvas / graph
+var margin = {top: 30, right: 50, bottom: 30, left: 20},
+    width = 800 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+// Parse the date / time
+var parseDate = d3.timeParse("%Y");
+
+// Set the ranges
+var x = d3.scaleTime().range([0, width]);  
+var y = d3.scaleLinear().range([height, 0]);
+
+// Define the line
+var priceline = d3.line()	
+    .x(function(d) { return x(d.date); })
+    .y(function(d) { return y(d.rate); });
+    
+// Adds the svg canvas
+var chart = d3.select("#chart").append("svg")
+   //responsive SVG needs these 2 attributes and no width and height attr
+   .attr("preserveAspectRatio", "xMinYMin meet")
+   .attr("viewBox", "0 0 800 600")
+   .classed("svg-content-responsive", true);
+var main = chart.append("g")
+            .attr("transform", 
+              "translate(" + margin.left + "," + margin.top + ")");
+const dataSource = 'https://gist.githubusercontent.com/captmomo/e53d87f4406379f49832f30a912a0d4d/raw/76711a9e8ccd48cbbca0fa8ec3e2544c89a3244e/birthrates.tsv'
+// Get the data
+d3.tsv(dataSource, function(error, data) {
+    console.log(data)
+    data.forEach(function(d) {
+		d.date = parseDate(d['year']);
+		d.rate = +d['crude_birth_rate'];
+    });
+
+    // Scale the range of the data
+    x.domain([d3.min(data, function(d){ return d.date;}), d3.max(data, function(d) { return d.date; })]);
+    y.domain([d3.min(data,function(d){return d.rate;})-2, d3.max(data, function(d) { return d.rate; })]);
+
+    // Nest the entries by symbol
+    var dataNest = d3.nest()
+        .key(function(d) {return d['ethnic_group'];})
+        .entries(data);
+    console.log(dataNest)
+    // set the colour scale
+    var color = d3.scaleOrdinal(d3.schemeCategory10);
+
+    const annotations = [
+        //moved recession annotation to front of array so it's behind 
+        //the Macbook Air annotation
+        {
+        note: { 
+            title: "Two is enough", 
+            lineType: "none", 
+            align: "right",
+            wrap: 150 //custom text wrapping
+          },
+          subject: {
+            height: height,
+            width: x(parseDate(1984))-x(parseDate(1972))
+          },
+          type: d3.annotationCalloutRect,
+          y: margin.top,
+          disable: ["connector"], // doesn't draw the connector
+          //can pass "subject" "note" and "connector" as valid options
+          dx: (x(parseDate(1984))-x(parseDate(1972))-margin.left)/2 ,
+          data: { x: parseDate(1972)}
+        },
+        {
+        note: { 
+            title: "Have three, or more if you can afford it", 
+            lineType: "none", 
+            align: "middle",
+            wrap: 275 //custom text wrapping
+          },
+          subject: {
+            height: height,
+            width: x(parseDate(2001))-x(parseDate(1988))
+          },
+          type: d3.annotationCalloutRect,
+          y: margin.top,
+          disable: ["connector"], // doesn't draw the connector
+          //can pass "subject" "note" and "connector" as valid options
+          dx: (x(parseDate(2001))-x(parseDate(1988)))/2 ,
+          data: { x: parseDate(1988)}
+        },
+        {
+        note: { 
+            title: "Baby Bonus Scheme", 
+            lineType: "none", 
+            align: "right",
+            wrap: 150 //custom text wrapping
+          },
+          subject: {
+            height: height,
+            width: x(parseDate(2001))-x(parseDate(2001))
+          },
+          type: d3.annotationCalloutRect,
+          y: margin.top,
+          disable: ["connector", "subject"], // doesn't draw the connector
+          //can pass "subject" "note" and "connector" as valid options
+          dx: (x(parseDate(2016))-x(parseDate(2001)))/2 ,
+          data: { x: parseDate(2001)}
+        },
+        {
+        note: { 
+            title: "Graduate Mothers Scheme", 
+            lineType: "none", 
+            align: "middle",
+            wrap: 60 //custom text wrapping
+          },
+          subject: {
+            height: height,
+            width: x(parseDate(1988))-x(parseDate(1984))
+          },
+          type: d3.annotationCalloutRect,
+          y: margin.top,
+          disable: ["connector", "subject"], // doesn't draw the connector
+          //can pass "subject" "note" and "connector" as valid options
+          dx: (x(parseDate(1988))-x(parseDate(1984)))/2 ,
+          data: { x: parseDate(1984)}
+        }
+    ]
+
+      const type = d3.annotationCustomType(
+        d3.annotationBadge, 
+        {"subject":{"radius": 10 }}
+      )
+
+      const makeAnnotations = d3.annotation()
+        .accessors({ 
+          x: function(d){ return x(d.x)+margin.left},
+          y: function(d){ return y(d.y) }
+        })
+        .annotations(annotations)
+
+      d3.select("svg")
+        .append("g")
+        .attr("class", "annotation-group")
+        .call(makeAnnotations)
+
+    var legend = main.selectAll('.legend')
+        .data(dataNest)
+        .enter().append('g')
+        .attr('class', 'legend');
+    //alert(legend)
+    legend.append('rect')
+        .attr('x', `${width - margin.right - 2}`)
+        .attr('y', function (d, i) { return i * 20; })
+        .attr('width', 10)
+        .attr('height', 10)
+        .style('fill', function (d) {
+            return color(d.key);
+        });
+      
+  legend.append('text')
+      .attr('x', width - margin.right + 10)
+      .attr('y', function(d, i){ return (i *  20) + 9;})
+      .text(function(d){ return d.key; })
+      .style("font", "10px sans-serif")
+      .style("align", "left")
+      .style("fill", function(d) { return color(d.key); });    
+
+    // Loop through each symbol / key
+    dataNest.forEach(function(d,i) { 
+
+        main.append("path")
+            .attr("class", "line")
+            .style("stroke", function() { // Add the colours dynamically
+                return d.color = color(d.key); })
+            .attr("d", priceline(d.values));
+        
+        main.append("text")
+            .datum(d)
+            .attr("transform", function(d) { return "translate(" + x(d.values[d.values.length-1].date) + "," + y(d.values[d.values.length-1].rate) + ")"; })
+            .attr("x", 3)
+            .attr("dy", "0.35em")
+            .style("font", "10px sans-serif")
+            .style("fill", function() { // Add the colours dynamically
+                return d.color = color(d.key); })
+            .text(function(d) { return d.key; });          
+    });
+
+  // Add the X Axis
+  main.append("g")
+      .attr("class", "axis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+//add the labels
+    main.append("text")
+        .attr("class", "label")
+        .attr("x", width)
+        .attr("y", height - 6)
+        .style("text-anchor", "end")
+        .style("font-family", "sans-serif")
+        .style("font-size", "10px")
+        .text("Year");
+
+  // Add the Y Axis
+  main.append("g")
+      .attr("class", "axis")
+      .call(d3.axisLeft(y));
+ //add the labels
+ main.append("text")
+        .attr("class", "label")
+        .attr("y", 6)
+        .attr("transform", "rotate(-90)")
+        .attr("dy", ".71em")
+        .style("text-anchor", "end")
+        .style("font-family", "sans-serif")
+        .style("font-size", "10px")
+        .text("Crude Birth Rate (per 1000 people)");
+
+              
+
+
+});
+
+</script>
+</body>

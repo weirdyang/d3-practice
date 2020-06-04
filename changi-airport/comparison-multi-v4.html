@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
+
+	<style>
+		body {
+			background-color: whitesmoke;
+		}
+
+		:root {
+			--line-chart-color: #607D8B;
+			--annotation-context-color: #00796B;
+			--annotation-above-color: #00BFA5;
+			--annotation-anomaly-color: #E8336D;
+		}
+
+		svg {
+			background-color: white;
+			font-family: 'Lato';
+		}
+
+		.axis,
+		.axis text {
+			fill: var(--line-chart-color);
+		}
+
+		.axis line,
+		path {
+			stroke: var(--line-chart-color);
+		}
+
+		path {
+			fill: none;
+		}
+
+		.annotation path {
+			stroke: var(--annotation-context-color);
+		}
+
+		.annotation:not(.above):not(.anomaly) path {
+			stroke-dasharray: 1, 3;
+		}
+
+		.annotation text {
+			fill: var(--annotation-context-color);
+		}
+
+		.annotation circle {
+			stroke: var(--annotation-above-color);
+		}
+
+		.annotation.above path {
+			stroke: var(--annotation-above-color);
+		}
+
+		.annotation.above text {
+			fill: var(--annotation-above-color);
+		}
+
+		.annotation.anomaly path {
+			stroke: var(--annotation-anomaly-color);
+			stroke-width: 2px;
+		}
+
+		.annotation.anomaly text {
+			fill: var(--annotation-anomaly-color);
+		}
+
+		.annotation-note-bg {
+			fill: rgba(0, 0, 0, 0);
+		}
+
+		.annotation-note-title {
+			font-weight: bold;
+		}
+
+		text.title {
+			font-size: 1.2em;
+			font-weight: bold;
+		}
+
+		.hover-line {
+			stroke: var(--annotation-context-color);
+			stroke-width: 2px;
+			stroke-dasharray: 1, 3;
+		}
+	</style>
+</head>
+
+<body>
+	<svg width=1200 height=720>
+		<text class="title" x=40 y=50>d3.annotation()</text>
+		<text x=40 y=80>Civil Aircraft Passengers per Month - Singapore Changi Airport</text>
+	</svg>
+	<script src="https://d3js.org/d3.v4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.12.1/d3-annotation.min.js"></script>
+	<script src="divided-line.js"></script>
+	<script>
+		//basic set up
+		const width = 1200
+		const height = 720
+		const margin = { top: 180, bottom: 50, left: 50, right: 50 }
+
+		const x = d3.scaleLinear().range([margin.left, width - margin.right])
+
+		const y = d3.scaleLinear().range([height - margin.bottom, margin.top])
+		const svg = d3.select("svg")
+
+		svg.append('g')
+			.attr('class', 'lineChart')
+
+		svg.select("g.lineChart")
+			.append("path")
+
+		svg.append("g")
+			.attr("class", "axis-y")
+			.attr("transform", "translate(" + margin.left + ", 0)")
+
+		svg.append("g")
+			.attr("class", "axis-x")
+			.attr("transform", "translate(0," + (height - margin.bottom) + ")")
+
+		svg.append('g')
+			.attr('class', 'tool-tip');
+		const url = "https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-1920.json";
+
+		//code to add point of focus;
+
+
+		const focus = svg.append("g")
+			.attr("class", "focus-tip annotation")
+			.style("display", "none") //hidden unless focused
+		const bisectDate = d3.bisector(function (d) { return d.date; }).left
+		const bisectMonth = d3.bisector(function (d) { return d.month; }).left
+		//guide on attrs; http://www.d3noob.org/2014/02/attributes-in-d3js.html
+		focus.append("circle")
+			.attr("class", "y")
+			.style("fill", "none")
+			.attr("r", 4);
+
+		focus.append("line")
+			.attr("class", "x-hover-line hover-line")
+			.attr("y1", 0)
+			.attr("y2", margin.bottom);
+
+		focus.append("line")
+			.attr("class", "y-hover-line hover-line")
+			.attr("x1", 0)
+			.attr("x2", width)
+
+
+		focus.append("text")
+			.attr("class", "annotation")
+			.attr("x", -25)
+			.attr("y", -25)
+			.attr("dy", ".31em");
+
+		// append the rectangle to capture mouse
+		svg.append("rect")
+			.attr("width", width)
+			.attr("height", height)
+			.style("fill", "none")
+			.style("pointer-events", "all")
+
+		const mouseBisect = function (xCoord, data) {
+			const date = x.invert(xCoord);
+			const index = bisectDate(data, date, 1);
+			const a = data[index - 1];
+			const b = data[index];
+			return date - a.date > b.date - date ? b : a;
+		}
+		const mouseBisectMonth = function (xCoord, data) {
+			const date = x.invert(xCoord);
+			const index = bisectMonth(data, date, 1);
+			const a = data[index - 1];
+			const b = data[index];
+			return date - a.month > b.month - date ? b : a;
+		}
+		//https://bl.ocks.org/d3noob/e5daff57a04c2639125e
+		function mousemoveV2(xCoord, data) {
+			//console.log(data[0]);
+			d = mouseBisectMonth(xCoord, data)
+			console.log(d);
+			//https://bl.ocks.org/alandunning/cfb7dcd7951826b9eacd54f0647f48d3
+			focusTip.attr("transform", `translate(${x(d.month)},${y(d.value)})`);
+			focusTip.select("text").text(function () { return d.value; });
+			focusTip.select(".x-hover-line").attr("y2", height - y(d.value) - margin.bottom);
+			focusTip.select(".y-hover-line").attr("x2", -(width + x(d.month) + margin.left));
+		}
+		var color = d3.scaleOrdinal(d3.schemeCategory20)
+		const captureArea = svg.select("rect");
+		const focusTip = svg.select("g.focus-tip");
+
+		const updateCircle = function (data) {
+
+			captureArea.on("mouseover", function () { focusTip.style("display", null); })
+			captureArea.on("mouseout", function () { focusTip.style("display", "none"); })
+			captureArea.on("mousemove", function () { mousemoveV2(d3.event.pageX, data) });
+		}
+		// Scale the range of the data
+		//x.domain(d3.extent(data, function (d) { return d.rating; }));
+		//y.domain([0, d3.max(data, function (d) { return d.ratio; })]);
+		const drawAxis = function (data) {
+			x.domain(d3.extent(data, function (d) { return d.date }));
+			y.domain(
+				[0,
+					d3.max(data, function (d) { return d.value }) + 1000]);
+
+			const yAxis = d3.axisLeft(y).ticks(3).tickFormat(function (d) { return + d });
+			const xAxis = d3.axisBottom(x)
+			svg.select("g.axis-y")
+				.call(yAxis);
+			svg.select("g.axis-x")
+				.call(xAxis);
+		}
+		const drawMultiAxis = function (data, fullData) {
+			var myData = [0, d3.max(data, function (d) { return d.month })]
+			x.domain(myData);
+			console.log(d3.extent(data, function (d) { return d.month }))
+			y.domain(
+				[0, d3.max(fullData, function (d) { return d.value * 1.1 }) + 1000]);
+			const yAxis = d3.axisLeft(y).ticks(5).tickFormat(function (d) { return + d })
+			const tickValues = Array(12).fill(1).map((val, index) => new Date().setMonth(index));
+			var months = ["January", "February", "March", "April", "May", "June",
+				"July", "August", "September", "October", "November", "December"];
+			const xAxis = d3.axisBottom(x).tickFormat(function (d) { return months[d] });
+			svg.select("g.axis-y")
+				.call(yAxis);
+			svg.select("g.axis-x")
+				.call(xAxis);
+		}
+		const drawLine = d3.line()
+			.curve(d3.curveCardinal)
+			.defined(d => !isNaN(d.value))
+			.x(function (d) { return x(d.date) })
+			.y(function (d) { return y(d.value) })
+
+		const drawLineMonth = d3.line()
+			.curve(d3.curveCardinal)
+			.defined(d => !isNaN(d.value))
+			.x(function (d) { return x(d.month) })
+			.y(function (d) { return y(d.value) })
+
+		const drawChart = function (data) {
+			const path = svg.select("g.lineChart")
+				.select("path")
+				.datum(data) //single svg elementn use datum
+				.attr("d", drawLine(data))
+			// .transition(transitionPath)
+			const pathLength = path.node().getTotalLength();
+			// D3 provides lots of transition options, have a play around here:
+			// https://github.com/d3/d3-transition
+			const transitionPath = d3
+				.transition()
+				.ease(d3.easeSin)
+				.duration(2500);
+			path
+				.attr("stroke-dashoffset", pathLength)
+				.attr("stroke-dasharray", pathLength)
+				.transition(transitionPath)
+				.attr("stroke-dashoffset", 0)
+		}
+		const addPathTransit = function (path) {
+			const pathLength = path.node().getTotalLength();
+
+			const transitionPath = d3
+				.transition()
+				.ease(d3.easeSin)
+				.duration(2500);
+			path
+				.attr("stroke-dashoffset", pathLength)
+				.attr("stroke-dasharray", pathLength)
+				.transition(transitionPath)
+				.attr("stroke-dashoffset", 0)
+		}
+		const toolTip = d3.select("body")
+			.append("div")
+			.style("position", "absolute")
+			.style("font-family", "sans-serif")
+			.style("font-size", "10px")
+			.style("z-index", "10")
+			.style("visibility", "hidden");
+		const tooltipContent = function createToolTip(model) {
+			return `<p>Year: ${model.year}</p>
+                <p>Passengers: ${model.value}</p>`
+		}
+		const drawDots = function (dataNest) {
+
+			dataNest.forEach(function (data, index) {
+				svg.selectAll("dot")
+					.data(data.values)
+					.enter().append("circle")
+					.attr("r", 5)
+					.attr("cx", function (d) { return x(d.month); })
+					.attr("cy", function (d) { return y(d.value); })
+					.style("fill", function (d) { return color(data.key); })
+					.on("mouseover", function (d) {
+						return toolTip
+							.style("visibility", "visible").html(tooltipContent(d));
+					})
+					.on("mousemove", function (d) {
+						return toolTip
+							.style("top", (d3.event.pageY - 10) + "px")
+							.style("left", (d3.event.pageX + 10) + "px")
+							.html(tooltipContent(d));
+					})
+					.on("mouseout", function (d) {
+						return toolTip
+							.style("visibility", "hidden");
+					});
+			})
+		}
+		const drawMultiLines = function (dataNest) {
+			console.log(dataNest);
+			dataNest.forEach(function (d, i) {
+				let main = svg.select("g.lineChart")
+				const path = main.append("path")
+					.attr("class", `line-${d.key}`)
+					.style("stroke", function () { // Add the colours dynamically
+						return d.color = color(d.key);
+					})
+					.attr("d", drawLineMonth(d.values));
+				addPathTransit(path);
+				main.append("text")
+					.datum(d)
+					.attr("transform", function (d) { return "translate(" + x(d.values[d.values.length - 1].month) + "," + y(d.values[d.values.length - 1].value) + ")"; })
+					.attr("x", 3)
+					.attr("dy", "0.35em")
+					.style("font", "10px sans-serif")
+					.style("fill", function () { // Add the colours dynamically
+						return d.color = color(d.key);
+					})
+					.text(function (d) { return d.key; });
+			});
+		}
+		const formatDate = function (data) {
+			data.forEach(element => {
+				element.date = new Date(element.month);
+				element.year = element.date.getFullYear();
+				element.month = +element.date.getMonth();
+				//element.month = element.date.toLocaleString('default', { month: 'short' })
+			})
+		}
+
+		const createData = function (data) {
+			console.log(data)
+			return d3.nest()
+				.key(function (d) { return d['year']; })
+				.entries(data);
+		}
+
+		const filteredData = function (data, month, year) {
+			return data.filter(element =>
+				element.month < month && element.year > year)
+		}
+		const fetchData = function (dataUrl) {
+			return fetch(dataUrl)
+				.then(res => res.json())
+				.then(result => {
+					return result
+				})
+		}
+
+		let recentData = false;
+		const all = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-full.json';
+		const recent = "https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-1920.json"
+		d3.json(all, function (error, json) {
+			if (error) throw error;
+			redrawMulti(json);
+
+		});
+		const redrawMulti = function (json) {
+			console.log(json)
+			formatDate(json);
+			let newData = filteredData(json, 3, 2017)
+			let dataNest = createData(newData);
+			drawMultiAxis(dataNest.slice(-2)[0].values, json);
+			drawMultiLines(dataNest)
+			drawDots(dataNest);
+
+		}
+		const redraw = function () {
+			let dataUrl = recentData ? all : recent;
+			fetchData(dataUrl)
+				.then(data => {
+
+					formatDate(data);
+					redrawChart(data);
+					console.log(data);
+				})
+			recentData = !recentData;
+		}
+		const redrawChart = function (data) {
+			drawAxis(data)
+			drawChart(data)
+			updateCircle(data);
+
+		}
+	</script>
+</body>
+
+</html>
