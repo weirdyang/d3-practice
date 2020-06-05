@@ -346,16 +346,17 @@
 					})
 					.attr("d", drawLineMonth(d.values));
 				addPathTransit(path);
-				main.append("text")
-					.datum(d)
-					.attr("transform", function (d) { return "translate(" + x(d.values[d.values.length - 1].month) + "," + y(d.values[d.values.length - 1].value) + ")"; })
-					.attr("x", 3)
-					.attr("dy", "0.35em")
-					.style("font", "10px sans-serif")
-					.style("fill", function () { // Add the colours dynamically
-						return d.color = color(d.key);
-					})
-					.text(function (d) { return d.key; });
+				//uncomment to add lables at end of path
+				// main.append("text")
+				// 	.datum(d)
+				// 	.attr("transform", function (d) { return "translate(" + x(d.values[d.values.length - 1].month) + "," + y(d.values[d.values.length - 1].value) + ")"; })
+				// 	.attr("x", 3)
+				// 	.attr("dy", "0.35em")
+				// 	.style("font", "10px sans-serif")
+				// 	.style("fill", function () { // Add the colours dynamically
+				// 		return d.color = color(d.key);
+				// 	})
+				// 	.text(function (d) { return d.key; });
 			});
 		}
 		const formatDate = function (data) {
@@ -394,6 +395,29 @@
 			redrawMulti(json);
 
 		});
+		const drawLegend = function (dataNest) {
+			var legend = svg.selectAll('.legend')
+				.data(dataNest)
+				.enter().append('g')
+				.attr('class', 'legend')
+			//alert(legend)
+			legend.append('rect')
+				.attr('x', `${width - margin.right - 52}`)
+				.attr('y', function (d, i) { return (i * 20) + margin.top; })
+				.attr('width', 10)
+				.attr('height', 10)
+				.style('fill', function (d) {
+					return color(d.key);
+				});
+
+			legend.append('text')
+				.attr('x', `${width - margin.right - 40}`)
+				.attr('y', function (d, i) { return (i * 20) + 9 + margin.top; })
+				.text(function (d) { return d.key; })
+				.style("font", "10px sans-serif")
+				.style("align", "left")
+				.style("fill", function (d) { return color(d.key); });
+		}
 		const redrawMulti = function (json) {
 			console.log(json)
 			formatDate(json);
@@ -402,6 +426,7 @@
 			drawMultiAxis(dataNest.slice(-2)[0].values, json);
 			drawMultiLines(dataNest)
 			drawDots(dataNest);
+			drawLegend(dataNest);
 
 		}
 		const redraw = function () {
