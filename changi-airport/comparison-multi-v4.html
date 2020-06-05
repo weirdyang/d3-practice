@@ -460,8 +460,8 @@
 		let fiveYearData = true;
 		const redraw = function () {
 			let settings = fiveYearData
-				? { 'month': 3, 'year': 2018, 'range': '2015-2020' }
-				: { 'month': 3, 'year': 2014, 'range': '2019-2020' };
+				? { 'month': 4, 'year': 2018, 'range': '2015-2020' }
+				: { 'month': 4, 'year': 2014, 'range': '2019-2020' };
 			fetchData(all)
 				.then(data => {
 					svg.selectAll("path").remove();

@@ -73,5 +73,10 @@
     "month": "2020-03",
     "level_1": "Total Passengers",
     "value": 1649662
+  },
+  {
+      "month": "2020-04",
+      "level_1": "Total Passengers",
+      "value": 25189
   }
 ]
