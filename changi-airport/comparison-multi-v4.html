@@ -22,6 +22,23 @@
 			font-family: 'Lato';
 		}
 
+		.btn {
+			background-color: rgba(0, 0, 0, .75);
+			border-radius: 5px;
+			display: inline-block;
+			color: #fff;
+			padding: .5em 1em;
+			cursor: pointer;
+		}
+
+		.btn:hover {
+			background-color: rgba(0, 0, 0, .9);
+		}
+
+		.btn:active {
+			background-color: rgba(0, 0, 0, 1);
+		}
+
 		.axis,
 		.axis text {
 			fill: var(--line-chart-color);
@@ -93,7 +110,7 @@
 <body>
 	<div>
 		<label for="update">Click to change range</label>
-		<button id="update" onclick="redraw()">2019-2020</button>
+		<button class="btn" id="update" onclick="redraw()">2019-2020</button>
 	</div>
 	<svg width=1200 height=720>
 		<text class="title" x=40 y=50>d3.annotation()</text>
@@ -340,10 +357,10 @@
 		}
 		const addDotsTransitRight = function (circles) {
 			circles.transition()
-					.delay(function (d, i) { return i * 5 })
-					.duration(duration)
-					.attr("cx", function (d) { return x(d.month); })
-					.attr("cy", function (d) { return y(d.value); })
+				.delay(function (d, i) { return i * 5 })
+				.duration(duration)
+				.attr("cx", function (d) { return x(d.month); })
+				.attr("cy", function (d) { return y(d.value); })
 		}
 		const drawMultiLines = function (dataNest) {
 			console.log(dataNest);
@@ -397,7 +414,7 @@
 				})
 		}
 
-		
+
 		const all = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-full.json';
 		const recent = "https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-1920.json"
 		d3.json(all, function (error, json) {
@@ -442,9 +459,9 @@
 		const updateBtn = document.getElementById('update');
 		let fiveYearData = true;
 		const redraw = function () {
-			let settings = fiveYearData 
-			? { 'month' : 3, 'year': 2018, 'range': '2015-2020'} 
-			: {'month': 3, 'year': 2014, 'range':'2019-2020'};
+			let settings = fiveYearData
+				? { 'month': 3, 'year': 2018, 'range': '2015-2020' }
+				: { 'month': 3, 'year': 2014, 'range': '2019-2020' };
 			fetchData(all)
 				.then(data => {
 					svg.selectAll("path").remove();
