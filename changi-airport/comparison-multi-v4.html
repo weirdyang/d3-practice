@@ -91,6 +91,10 @@
 </head>
 
 <body>
+	<div>
+		<label for="update">Click to change range</label>
+		<button id="update" onclick="redraw()">2019-2020</button>
+	</div>
 	<svg width=1200 height=720>
 		<text class="title" x=40 y=50>d3.annotation()</text>
 		<text x=40 y=80>Civil Aircraft Passengers per Month - Singapore Changi Airport</text>
@@ -393,12 +397,14 @@
 				})
 		}
 
-		let recentData = false;
+		
 		const all = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-full.json';
 		const recent = "https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-1920.json"
 		d3.json(all, function (error, json) {
 			if (error) throw error;
-			redrawMulti(json);
+
+			formatDate(json);
+			redrawMulti(json, 3, 2014);
 
 		});
 		const drawLegend = function (dataNest) {
@@ -424,10 +430,8 @@
 				.style("align", "left")
 				.style("fill", function (d) { return color(d.key); });
 		}
-		const redrawMulti = function drawMultiSeriesLines(json) {
-			console.log(json)
-			formatDate(json);
-			let newData = filteredData(json, 3, 2014)
+		const redrawMulti = function drawMultiSeriesLines(json, month, year) {
+			let newData = filteredData(json, month, year)
 			let dataNest = createData(newData);
 			drawMultiAxis(dataNest.slice(-2)[0].values, json);
 			drawMultiLines(dataNest)
@@ -435,16 +439,22 @@
 			drawLegend(dataNest);
 
 		}
+		const updateBtn = document.getElementById('update');
+		let fiveYearData = true;
 		const redraw = function () {
-			let dataUrl = recentData ? all : recent;
-			fetchData(dataUrl)
+			let settings = fiveYearData 
+			? { 'month' : 3, 'year': 2018, 'range': '2015-2020'} 
+			: {'month': 3, 'year': 2014, 'range':'2019-2020'};
+			fetchData(all)
 				.then(data => {
-
+					svg.selectAll("path").remove();
+					svg.selectAll("circle").remove();
 					formatDate(data);
-					redrawChart(data);
+					redrawMulti(data, settings.month, settings.year);
 					console.log(data);
 				})
-			recentData = !recentData;
+			fiveYearData = !fiveYearData;
+			updateBtn.innerHTML = settings.range
 		}
 		//this is to draw single line graph
 		const redrawChart = function drawSingleLineSeries(data) {
