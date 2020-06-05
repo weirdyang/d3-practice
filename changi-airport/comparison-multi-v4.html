@@ -466,6 +466,7 @@
 				.then(data => {
 					svg.selectAll("path").remove();
 					svg.selectAll("circle").remove();
+					svg.selectAll(".legend").remove();
 					formatDate(data);
 					redrawMulti(data, settings.month, settings.year);
 					console.log(data);
