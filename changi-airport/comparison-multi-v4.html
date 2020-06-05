@@ -403,7 +403,7 @@
 			//alert(legend)
 			legend.append('rect')
 				.attr('x', `${width - margin.right - 52}`)
-				.attr('y', function (d, i) { return (i * 20) + margin.top; })
+				.attr('y', function (d, i) { return (i * 20) + margin.top/2; })
 				.attr('width', 10)
 				.attr('height', 10)
 				.style('fill', function (d) {
@@ -412,7 +412,7 @@
 
 			legend.append('text')
 				.attr('x', `${width - margin.right - 40}`)
-				.attr('y', function (d, i) { return (i * 20) + 9 + margin.top; })
+				.attr('y', function (d, i) { return (i * 20) + 9 + margin.top/2; })
 				.text(function (d) { return d.key; })
 				.style("font", "10px sans-serif")
 				.style("align", "left")
@@ -421,7 +421,7 @@
 		const redrawMulti = function (json) {
 			console.log(json)
 			formatDate(json);
-			let newData = filteredData(json, 3, 2017)
+			let newData = filteredData(json, 3, 2014)
 			let dataNest = createData(newData);
 			drawMultiAxis(dataNest.slice(-2)[0].values, json);
 			drawMultiLines(dataNest)
