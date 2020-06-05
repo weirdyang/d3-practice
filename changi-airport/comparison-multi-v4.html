@@ -100,14 +100,16 @@
 	<script src="divided-line.js"></script>
 	<script>
 		//basic set up
-		const width = 1200
-		const height = 720
-		const margin = { top: 180, bottom: 50, left: 50, right: 50 }
+		const width = 1200;
+		const height = 720;
+		const margin = { top: 180, bottom: 50, left: 50, right: 50 };
 
-		const x = d3.scaleLinear().range([margin.left, width - margin.right])
+		const x = d3.scaleLinear().range([margin.left, width - margin.right]);
 
-		const y = d3.scaleLinear().range([height - margin.bottom, margin.top])
-		const svg = d3.select("svg")
+		const y = d3.scaleLinear().range([height - margin.bottom, margin.top]);
+		const svg = d3.select("svg");
+
+		const duration = 2500;
 
 		svg.append('g')
 			.attr('class', 'lineChart')
@@ -212,8 +214,10 @@
 			const yAxis = d3.axisLeft(y).ticks(3).tickFormat(function (d) { return + d });
 			const xAxis = d3.axisBottom(x)
 			svg.select("g.axis-y")
+				.transition(duration)
 				.call(yAxis);
 			svg.select("g.axis-x")
+				.transition(duration)
 				.call(xAxis);
 		}
 		const drawMultiAxis = function (data, fullData) {
@@ -222,14 +226,21 @@
 			console.log(d3.extent(data, function (d) { return d.month }))
 			y.domain(
 				[0, d3.max(fullData, function (d) { return d.value * 1.1 }) + 1000]);
-			const yAxis = d3.axisLeft(y).ticks(5).tickFormat(function (d) { return + d })
+			const yAxis = d3.axisLeft(y).ticks(3).tickFormat(function (d) { return + d })
 			const tickValues = Array(12).fill(1).map((val, index) => new Date().setMonth(index));
 			var months = ["January", "February", "March", "April", "May", "June",
 				"July", "August", "September", "October", "November", "December"];
-			const xAxis = d3.axisBottom(x).tickFormat(function (d) { return months[d] });
+			console.log("data", data)
+			const xAxis = d3.axisBottom(x).ticks(2).tickFormat(function (d) { return months[d] });
 			svg.select("g.axis-y")
+				.transition()
+				.duration(duration)
+				.ease(d3.easeSin)
 				.call(yAxis);
 			svg.select("g.axis-x")
+				.transition()
+				.duration(duration)
+				.ease(d3.easeSin)
 				.call(xAxis);
 		}
 		const drawLine = d3.line()
@@ -256,7 +267,7 @@
 			const transitionPath = d3
 				.transition()
 				.ease(d3.easeSin)
-				.duration(2500);
+				.duration(duration);
 			path
 				.attr("stroke-dashoffset", pathLength)
 				.attr("stroke-dasharray", pathLength)
@@ -269,7 +280,7 @@
 			const transitionPath = d3
 				.transition()
 				.ease(d3.easeSin)
-				.duration(2500);
+				.duration(duration);
 			path
 				.attr("stroke-dashoffset", pathLength)
 				.attr("stroke-dasharray", pathLength)
@@ -290,7 +301,7 @@
 		const drawDots = function (dataNest) {
 
 			dataNest.forEach(function (data, index) {
-				svg.selectAll("dot")
+				var circles = svg.selectAll("dot")
 					.data(data.values)
 					.enter().append("circle")
 					.attr("r", 5)
@@ -310,7 +321,18 @@
 					.on("mouseout", function (d) {
 						return toolTip
 							.style("visibility", "hidden");
+					})
+				circles.transition()
+					.duration(2500)
+					.on("start", function hide() {
+						d3.select(this)
+							.style("visibility", "hidden")
+					})
+					.on("end", function hide() {
+						d3.select(this)
+							.style("visibility", "visible")
 					});
+
 			})
 		}
 		const drawMultiLines = function (dataNest) {
