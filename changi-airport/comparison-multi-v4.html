@@ -98,6 +98,7 @@
 	<script src="https://d3js.org/d3.v4.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.12.1/d3-annotation.min.js"></script>
 	<script src="divided-line.js"></script>
+	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 	<script>
 		//basic set up
 		const width = 1200;
@@ -192,7 +193,8 @@
 			focusTip.select(".x-hover-line").attr("y2", height - y(d.value) - margin.bottom);
 			focusTip.select(".y-hover-line").attr("x2", -(width + x(d.month) + margin.left));
 		}
-		var color = d3.scaleOrdinal(d3.schemeCategory20)
+		//const color = d3.scaleOrdinal(d3.schemeCategory20)
+		const color = d3.scaleOrdinal(d3.schemeTableau10)
 		const captureArea = svg.select("rect");
 		const focusTip = svg.select("g.focus-tip");
 
@@ -296,16 +298,20 @@
 			.style("visibility", "hidden");
 		const tooltipContent = function createToolTip(model) {
 			return `<p>Year: ${model.year}</p>
+			<p>Month: ${model.month}</p>
                 <p>Passengers: ${model.value}</p>`
 		}
 		const drawDots = function (dataNest) {
-
+			let startX = d3.scaleLinear()
+				.range([margin.left, width - margin.right])
+				.domain([0, 0]);
 			dataNest.forEach(function (data, index) {
-				var circles = svg.selectAll("dot")
+				svg.selectAll("dot")
 					.data(data.values)
 					.enter().append("circle")
-					.attr("r", 5)
-					.attr("cx", function (d) { return x(d.month); })
+					.attr("class", `year-${data.key}`)
+					.attr("r", 3)
+					.attr("cx", function (d) { return startX(d.month); })
 					.attr("cy", function (d) { return y(d.value); })
 					.style("fill", function (d) { return color(data.key); })
 					.on("mouseover", function (d) {
@@ -322,18 +328,18 @@
 						return toolTip
 							.style("visibility", "hidden");
 					})
-				circles.transition()
-					.duration(2500)
-					.on("start", function hide() {
-						d3.select(this)
-							.style("visibility", "hidden")
-					})
-					.on("end", function hide() {
-						d3.select(this)
-							.style("visibility", "visible")
-					});
+
+				let circles = d3.selectAll(`circle.year-${data.key}`)
+				addDotsTransitRight(circles);
 
 			})
+		}
+		const addDotsTransitRight = function (circles) {
+			circles.transition()
+					.delay(function (d, i) { return i * 5 })
+					.duration(duration)
+					.attr("cx", function (d) { return x(d.month); })
+					.attr("cy", function (d) { return y(d.value); })
 		}
 		const drawMultiLines = function (dataNest) {
 			console.log(dataNest);
@@ -403,7 +409,7 @@
 			//alert(legend)
 			legend.append('rect')
 				.attr('x', `${width - margin.right - 52}`)
-				.attr('y', function (d, i) { return (i * 20) + margin.top/2; })
+				.attr('y', function (d, i) { return (i * 20) + margin.top / 2; })
 				.attr('width', 10)
 				.attr('height', 10)
 				.style('fill', function (d) {
@@ -412,13 +418,13 @@
 
 			legend.append('text')
 				.attr('x', `${width - margin.right - 40}`)
-				.attr('y', function (d, i) { return (i * 20) + 9 + margin.top/2; })
+				.attr('y', function (d, i) { return (i * 20) + 9 + margin.top / 2; })
 				.text(function (d) { return d.key; })
 				.style("font", "10px sans-serif")
 				.style("align", "left")
 				.style("fill", function (d) { return color(d.key); });
 		}
-		const redrawMulti = function (json) {
+		const redrawMulti = function drawMultiSeriesLines(json) {
 			console.log(json)
 			formatDate(json);
 			let newData = filteredData(json, 3, 2014)
@@ -440,7 +446,8 @@
 				})
 			recentData = !recentData;
 		}
-		const redrawChart = function (data) {
+		//this is to draw single line graph
+		const redrawChart = function drawSingleLineSeries(data) {
 			drawAxis(data)
 			drawChart(data)
 			updateCircle(data);
