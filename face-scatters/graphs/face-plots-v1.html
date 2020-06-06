@@ -109,8 +109,7 @@
 
 <body>
 	<div>
-		<label for="update">Click to change range</label>
-		<button class="btn" id="update" onclick="redraw()">2019-2020</button>
+		<button class="btn" id="update" onclick="redraw()">Click to change the face</button>
 	</div>
 	<svg width=600 height=600>
 		<text class="title" x=40 y=50>d3.annotation()</text>
@@ -187,26 +186,7 @@
 						.style("fill", function (d) { return color(key) })
 				});
 		}
-		const formatDate = function (data) {
-			data.forEach(element => {
-				element.date = new Date(element.month);
-				element.year = element.date.getFullYear();
-				element.month = +element.date.getMonth();
-				element.readable_month = element.date.toLocaleString('default', { month: 'short' })
-			})
-		}
 
-		const createData = function (data) {
-			console.log(data)
-			return d3.nest()
-				.key(function (d) { return d['year']; })
-				.entries(data);
-		}
-
-		const filteredData = function (data, month, year) {
-			return data.filter(element =>
-				element.month < month && element.year > year)
-		}
 		const fetchData = function (dataUrl) {
 			return fetch(dataUrl)
 				.then(res => res.json())
@@ -216,9 +196,6 @@
 		}
 		const drawAxis = function (data) {
 			x.domain([d3.min(data, function(d) {return d.x}) * 0.95, d3.max(data, function (d) { return d.x }) * 1.05]);
-			// x.domain(
-			// 	[d3.min(data, function (d) { d.date }),
-			// d3.max(data, function (d) { d.date })]);
 			y.domain([d3.min(data, function(d) {return d.y}) * 1.05, d3.max(data, function (d) { return d.y }) * 0.95]);
 			const yAxis = d3.axisLeft(y).ticks(3).tickFormat(function (d) { return + d })
 			const xAxis = d3.axisBottom(x)
@@ -284,27 +261,7 @@
 					resolve("transition end")
 				}, duration)
 			})
-		}
-		function destroyReset(){
-
-		}
-		
-		
-		function redrawMultipleSeries() {
-			let settings = fiveYearData
-				? { 'month': 4, 'year': 2018, 'range': '2015-2020' }
-				: { 'month': 4, 'year': 2014, 'range': '2019-2020' };
-			fetchData(all)
-				.then(data => {
-					svg.selectAll("path").remove();
-					svg.selectAll(".legend").remove();
-					formatDate(data);
-					redrawMulti(data, settings.month, settings.year);
-					console.log(data);
-				})
-			fiveYearData = !fiveYearData;
-			updateBtn.innerHTML = settings.range
-		}
+		}	
 
 	</script>
 </body>
