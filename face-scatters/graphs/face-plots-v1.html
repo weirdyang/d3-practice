@@ -266,8 +266,8 @@
 		const drawAxis = function (data) {
 			x.domain([d3.min(data, function (d) { return d.x }) * 0.95, d3.max(data, function (d) { return d.x }) * 1.05]);
 			y.domain([d3.min(data, function (d) { return d.y }) * 1.05, d3.max(data, function (d) { return d.y }) * 0.95]);
-			const yAxis = d3.axisLeft(y).ticks(3).tickFormat(function (d) { return + d })
-			const xAxis = d3.axisBottom(x)
+			const yAxis = d3.axisLeft(y).tickFormat(function (d) { return + d });
+			const xAxis = d3.axisBottom(x);
 
 			svg.select("g.axis-y")
 				.transition()
