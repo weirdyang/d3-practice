@@ -23,6 +23,19 @@
 			font-family: 'Lato';
 		}
 
+		.columns.is-fullheight {
+			min-height: calc(100vh - .25rem);
+			max-height: calc(100vh - .25rem);
+			height: calc(100vh - .25rem);
+			display: flex;
+			flex-direction: row;
+			justify-content: stretch;
+		}
+
+		.columns.is-fullheight .column {
+			overflow-y: auto;
+		}
+
 		.btn {
 			background-color: rgba(0, 0, 0, .75);
 			border-radius: 5px;
@@ -112,43 +125,67 @@
 	<div class="container">
 		<div class="columns is-centered">
 			<div class="column is-half">
-				<div>
-					<div class="field">
-						<div class="field-label has-text-left">
-							<label class="label">Select a leader</label>
-						</div>
-						<div class="field-body is-horizontal">
-							<div class="control">
-								<div>
-									<input class="radio" type="radio" id="xi" name="drone" value="xi" checked>
-									<label for="xi">Xi Jinping</label>
-								</div>
+				<div class="container">
+					<label class="label">Select a leader</label>
+					<div class="field is-horizontal">
+						<div class="field-body">
+							<div class="field">
 
-								<div>
-									<input class="radio" type="radio" id="hillary" name="drone" value="hillary">
-									<label for="hillary">Hillary Clinton</label>
-								</div>
-
-								<div>
-									<input class="radio btn" type="radio" id="trudeau" name="drone" value="trudeau">
-									<label for="trudeau">Justin Trudeau</label>
-								</div>
-								<div>
-									<input class="radio" type="radio" id="trump" name="drone" value="trump">
-									<label for="trump">Donald Trump</label>
+								<div class="control">
+										<label class="radio" for="xi">
+											<input class="leader" type="radio" id="xi" name="drone" value="xi" checked>
+											Xi Jinping
+										</label>
+										<label class="radio" for="xi">
+											<input class="leader" type="radio" id="xi" name="drone" value="hillary">
+											Hillary Clinton
+										</label>
+										<label for="trudeau">
+											<input class="leader" type="radio" id="trudeau" name="drone" value="trudeau">
+											Justin Trudeau
+										</label>
+	
+										<label for="trump">
+											<input class="leader" type="radio" id="trump" name="drone" value="trump">
+											Donald Trump
+										</label>
 								</div>
 							</div>
 						</div>
 
 					</div>
+
 				</div>
+			</div>
+		</div>
+		<div class="columns is-fullheight">
+			<div class="column">
+
+			</div>
+			<div class="column is-half is-centered">
 				<svg width=600 height=600>
 					<text class="title" x=40 y=50>d3.annotation()</text>
 					<text x=40 y=80>Scatter plots of world leaders' facial landmarks</text>
 				</svg>
 
 			</div>
+			<div class="column">
+				<div class="box">
+					<div class="display-card">
+						<figure class="image is-rounded">
+							<img id="card-image" src='https://github.com/captmomo/d3-practice/blob/master/face-scatters/images/xi.jpg?raw=true'
+								alt='Xi Jinping' />
+						</figure>
+					</div>
+					<div class="content">
+						<div id="card-name" class="content has-text-centered sub-link">
+							Xi Jinping
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+	</div>
 
 	</div>
 	<script src="https://d3js.org/d3.v4.js"></script>
@@ -183,8 +220,7 @@
 
 		svg.append('g')
 			.attr('class', 'tool-tip');
-		const url = "https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-1920.json";
-
+	
 		//const color = d3.scaleOrdinal(d3.schemeCategory20)
 		const color = d3.scaleOrdinal(d3.schemeTableau10)
 
@@ -254,7 +290,30 @@
 		const hillary = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/face-scatters/data/hillary.json'
 		const trudeau = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/face-scatters/data/trudeau.json'
 		const trump = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/face-scatters/data/trump.json'
-
+		const imageDiv = document.getElementById('card-image')
+		const imageName = document.getElementById('card-name')
+		const app = {
+			'trump': {
+				'src': 'https://github.com/captmomo/d3-practice/blob/master/face-scatters/images/trump.jpg?raw=true',
+				'name': 'Donald Trump',
+				'url': trump,
+			},
+			'trudeau': {
+				'src': 'https://github.com/captmomo/d3-practice/blob/master/face-scatters/images/trudeau.jpg?raw=true',
+				'name': 'Justin Trudeau',
+				'url': trudeau,
+			},
+			'hillary': {
+				'src': 'https://github.com/captmomo/d3-practice/blob/master/face-scatters/images/hillary.jpg?raw=true',
+				'name': 'Hillary Clinton',
+				'url': hillary,
+			},
+			'xi': {
+				'src': 'https://github.com/captmomo/d3-practice/blob/master/face-scatters/images/xi.jpg?raw=true',
+				'name': 'Xi Jinping',
+				'url': xi,
+			},
+		}
 		const people = { 'xi': xi, 'hillary': hillary, 'trudeau': trudeau, 'trump': trump }
 
 		d3.json(xi, function (error, json) {
@@ -265,27 +324,32 @@
 		});
 		const updateBtn = document.getElementById('update');
 		let destroyed = false;
-		const redraw = function destroyOrRedraw(source) {
-			redrawDots(source);
+		const redraw = function destroyOrRedraw(data) {
+			redrawDots(data);
 
 		}
 
-		function redrawDots(source) {
-			document.querySelectorAll('.radio').forEach(element => element.disabled = true);
+		function redrawDots(data) {
+			document.querySelectorAll('.leader').forEach(element => element.disabled = true);
+			let source = data.url;
 			asyncDestroy().then(result => {
 				console.log(result);
+				loadImage(data)
 				fetchData(source)
 					.then(data => {
 						drawAxis(data);
 						drawDots(data);
 					}).then(() => {
 						destroyed = !destroyed;
-					}).then(() =>{
-						document.querySelectorAll('.radio').forEach(element => element.disabled = false);
+					}).then(() => {
+						document.querySelectorAll('.leader').forEach(element => element.disabled = false);
 					})
 			})
 		}
-
+		const loadImage = function reload(data){
+			imageDiv.src = data.src;
+			imageName.innerHTML = data.name
+		}
 		function asyncDestroy() {
 			return new Promise((resolve, reject) => {
 				let key = Math.floor(Math.random() * 10)
@@ -307,10 +371,10 @@
 			})
 		}
 
-		document.querySelectorAll('.radio').forEach(item => {
+		document.querySelectorAll('.leader').forEach(item => {
 			console.log(item.value)
 			item.addEventListener('change', event => {
-				redraw(people[item.value])
+				redraw(app[item.value])
 			})
 		})
 	</script>
