@@ -151,98 +151,9 @@
 			.attr('class', 'tool-tip');
 		const url = "https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-1920.json";
 
-		//code to add point of focus;
-
-
-		const focus = svg.append("g")
-			.attr("class", "focus-tip annotation")
-			.style("display", "none") //hidden unless focused
-		const bisectDate = d3.bisector(function (d) { return d.date; }).left
-		const bisectMonth = d3.bisector(function (d) { return d.month; }).left
-		//guide on attrs; http://www.d3noob.org/2014/02/attributes-in-d3js.html
-		focus.append("circle")
-			.attr("class", "y")
-			.style("fill", "none")
-			.attr("r", 4);
-
-		focus.append("line")
-			.attr("class", "x-hover-line hover-line")
-			.attr("y1", 0)
-			.attr("y2", margin.bottom);
-
-		focus.append("line")
-			.attr("class", "y-hover-line hover-line")
-			.attr("x1", 0)
-			.attr("x2", width)
-
-
-		focus.append("text")
-			.attr("class", "annotation")
-			.attr("x", -25)
-			.attr("y", -25)
-			.attr("dy", ".31em");
-
-		// append the rectangle to capture mouse
-		svg.append("rect")
-			.attr("width", width)
-			.attr("height", height)
-			.style("fill", "none")
-			.style("pointer-events", "all")
-
-		const mouseBisect = function (xCoord, data) {
-			const date = x.invert(xCoord);
-			const index = bisectDate(data, date, 1);
-			const a = data[index - 1];
-			const b = data[index];
-			return date - a.date > b.date - date ? b : a;
-		}
-		const mouseBisectMonth = function (xCoord, data) {
-			const date = x.invert(xCoord);
-			const index = bisectMonth(data, date, 1);
-			const a = data[index - 1];
-			const b = data[index];
-			return date - a.month > b.month - date ? b : a;
-		}
-		//https://bl.ocks.org/d3noob/e5daff57a04c2639125e
-		function mousemoveV2(xCoord, data) {
-			//console.log(data[0]);
-			d = mouseBisectMonth(xCoord, data)
-			console.log(d);
-			//https://bl.ocks.org/alandunning/cfb7dcd7951826b9eacd54f0647f48d3
-			focusTip.attr("transform", `translate(${x(d.month)},${y(d.value)})`);
-			focusTip.select("text").text(function () { return d.value; });
-			focusTip.select(".x-hover-line").attr("y2", height - y(d.value) - margin.bottom);
-			focusTip.select(".y-hover-line").attr("x2", -(width + x(d.month) + margin.left));
-		}
 		//const color = d3.scaleOrdinal(d3.schemeCategory20)
 		const color = d3.scaleOrdinal(d3.schemeTableau10)
-		const captureArea = svg.select("rect");
-		const focusTip = svg.select("g.focus-tip");
 
-		const updateCircle = function (data) {
-
-			captureArea.on("mouseover", function () { focusTip.style("display", null); })
-			captureArea.on("mouseout", function () { focusTip.style("display", "none"); })
-			captureArea.on("mousemove", function () { mousemoveV2(d3.event.pageX, data) });
-		}
-		// Scale the range of the data
-		//x.domain(d3.extent(data, function (d) { return d.rating; }));
-		//y.domain([0, d3.max(data, function (d) { return d.ratio; })]);
-		const drawAxis = function (data) {
-			x.domain(d3.extent(data, function (d) { return d.date }));
-			y.domain(
-				[0,
-					d3.max(data, function (d) { return d.value }) + 1000]);
-
-			const yAxis = d3.axisLeft(y).ticks(3).tickFormat(function (d) { return + d });
-			const xAxis = d3.axisBottom(x)
-			svg.select("g.axis-y")
-				.transition(duration)
-				.call(yAxis);
-			svg.select("g.axis-x")
-				.transition(duration)
-				.call(xAxis);
-		}
 		const drawMultiAxis = function (data, fullData) {
 			var myData = [0, d3.max(data, function (d) { return d.month })]
 			x.domain(myData);
@@ -278,25 +189,6 @@
 			.x(function (d) { return x(d.month) })
 			.y(function (d) { return y(d.value) })
 
-		const drawChart = function (data) {
-			const path = svg.select("g.lineChart")
-				.select("path")
-				.datum(data) //single svg elementn use datum
-				.attr("d", drawLine(data))
-			// .transition(transitionPath)
-			const pathLength = path.node().getTotalLength();
-			// D3 provides lots of transition options, have a play around here:
-			// https://github.com/d3/d3-transition
-			const transitionPath = d3
-				.transition()
-				.ease(d3.easeSin)
-				.duration(duration);
-			path
-				.attr("stroke-dashoffset", pathLength)
-				.attr("stroke-dasharray", pathLength)
-				.transition(transitionPath)
-				.attr("stroke-dashoffset", 0)
-		}
 		const addPathTransit = function (path) {
 			const pathLength = path.node().getTotalLength();
 
@@ -357,19 +249,19 @@
 				.ease(d3.easeSin)
 				.attr("cx", function (d) { return x(d.month); })
 				.attr("cy", function (d) { return y(d.value); })
-				.on("start", function reset(){
+				.on("start", function reset() {
 					d3.select(this)
-						.attr("cx", function(d){ return x(0)})
-						.attr("cy", function(d){ return y(d.value)})
+						.attr("cx", function (d) { return x(0) })
+						.attr("cy", function (d) { return y(d.value) })
 				})
-				.on("end", function blowUp(){
+				.on("end", function blowUp() {
 					d3.select(this)
-						.style("fill", function(d){ return color(key)})
+						.style("fill", function (d) { return color(key) })
 						.transition()
 						.attr("r", 10)
 						.transition()
 						.attr("r", 3)
-						.style("fill", function(d){ return color(key)})
+						.style("fill", function (d) { return color(key) })
 				});
 		}
 		const drawMultiLines = function (dataNest) {
@@ -484,13 +376,7 @@
 			fiveYearData = !fiveYearData;
 			updateBtn.innerHTML = settings.range
 		}
-		//this is to draw single line graph
-		const redrawChart = function drawSingleLineSeries(data) {
-			drawAxis(data)
-			drawChart(data)
-			updateCircle(data);
 
-		}
 	</script>
 </body>
 
