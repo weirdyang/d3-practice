@@ -4,7 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<link href='https://fonts.googleapis.com/css?family=Lato:300,900' rel='stylesheet' type='text/css'>
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 	<style>
 		body {
 			background-color: whitesmoke;
@@ -108,16 +109,50 @@
 </head>
 
 <body>
-	<div>
-		<button class="btn" id="update" onclick="redraw()">Click to change the face</button>
+	<div class="container">
+		<div class="columns is-centered">
+			<div class="column is-half">
+				<div>
+					<div class="field">
+						<div class="field-label has-text-left">
+							<label class="label">Select a leader</label>
+						</div>
+						<div class="field-body is-horizontal">
+							<div class="control">
+								<div>
+									<input class="radio" type="radio" id="xi" name="drone" value="xi" checked>
+									<label for="xi">Xi Jinping</label>
+								</div>
+
+								<div>
+									<input class="radio" type="radio" id="hillary" name="drone" value="hillary">
+									<label for="hillary">Hillary Clinton</label>
+								</div>
+
+								<div>
+									<input class="radio btn" type="radio" id="trudeau" name="drone" value="trudeau">
+									<label for="trudeau">Justin Trudeau</label>
+								</div>
+								<div>
+									<input class="radio" type="radio" id="trump" name="drone" value="trump">
+									<label for="trump">Donald Trump</label>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<svg width=600 height=600>
+					<text class="title" x=40 y=50>d3.annotation()</text>
+					<text x=40 y=80>Scatter plots of world leaders' facial landmarks</text>
+				</svg>
+
+			</div>
+		</div>
+
 	</div>
-	<svg width=600 height=600>
-		<text class="title" x=40 y=50>d3.annotation()</text>
-		<text x=40 y=80>Civil Aircraft Passengers per Month - Singapore Changi Airport</text>
-	</svg>
 	<script src="https://d3js.org/d3.v4.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.12.1/d3-annotation.min.js"></script>
-	<script src="divided-line.js"></script>
 	<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 	<script>
 		//basic set up
@@ -159,8 +194,9 @@
 				.data(data)
 				.enter().append("circle")
 				.attr("r", 3)
+				.style("visibility", "hidden")
 			let circles = d3.selectAll("circle")
-			
+
 			addDotsTransitRight(circles, key);
 		}
 		const addDotsTransitRight = function (circles, key) {
@@ -172,7 +208,8 @@
 				.attr("cy", function (d) { return y(d.y); })
 				.on("start", function reset() {
 					d3.select(this)
-					.style("fill", function(){return color(key)})
+						.style("visibility", "visible")
+						.style("fill", function () { return color(key) })
 						.attr("cx", function (d) { return x(0) })
 						.attr("cy", function (d) { return y(d.y) })
 				})
@@ -195,8 +232,8 @@
 				})
 		}
 		const drawAxis = function (data) {
-			x.domain([d3.min(data, function(d) {return d.x}) * 0.95, d3.max(data, function (d) { return d.x }) * 1.05]);
-			y.domain([d3.min(data, function(d) {return d.y}) * 1.05, d3.max(data, function (d) { return d.y }) * 0.95]);
+			x.domain([d3.min(data, function (d) { return d.x }) * 0.95, d3.max(data, function (d) { return d.x }) * 1.05]);
+			y.domain([d3.min(data, function (d) { return d.y }) * 1.05, d3.max(data, function (d) { return d.y }) * 0.95]);
 			const yAxis = d3.axisLeft(y).ticks(3).tickFormat(function (d) { return + d })
 			const xAxis = d3.axisBottom(x)
 
@@ -215,6 +252,11 @@
 
 		const xi = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/face-scatters/data/xi.json';
 		const hillary = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/face-scatters/data/hillary.json'
+		const trudeau = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/face-scatters/data/trudeau.json'
+		const trump = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/face-scatters/data/trump.json'
+
+		const people = { 'xi': xi, 'hillary': hillary, 'trudeau': trudeau, 'trump': trump }
+
 		d3.json(xi, function (error, json) {
 			if (error) throw error;
 			drawAxis(json);
@@ -223,46 +265,54 @@
 		});
 		const updateBtn = document.getElementById('update');
 		let destroyed = false;
-		const redraw = function destroyOrRedraw(){
-			redrawDots();
-			
+		const redraw = function destroyOrRedraw(source) {
+			redrawDots(source);
+
 		}
-		
-		function redrawDots(){
-			let source = destroyed ? xi : hillary
-			asyncDestroy().then(result =>{
+
+		function redrawDots(source) {
+			document.querySelectorAll('.radio').forEach(element => element.disabled = true);
+			asyncDestroy().then(result => {
 				console.log(result);
 				fetchData(source)
 					.then(data => {
 						drawAxis(data);
 						drawDots(data);
-					}).then(()=>{
+					}).then(() => {
 						destroyed = !destroyed;
+					}).then(() =>{
+						document.querySelectorAll('.radio').forEach(element => element.disabled = false);
 					})
 			})
 		}
 
-		function asyncDestroy(){
-			return new Promise((resolve, reject) =>{
-							let key = Math.floor(Math.random() * 10)
-			let circles = d3.selectAll("circle")
-			circles.transition()
-				.delay(function (d, i) { return i * 5 })
-				.duration(duration)
-				.ease(d3.easeSin)
-				.attr("cx", function (d) { return x(0); })
-				.attr("cy", function (d) { return y(d.y); })
-				.on("start", function reColor() {
-					d3.select(this)
-					.style("fill", function(){return color(key)})
-				});
-				setTimeout(function(){
+		function asyncDestroy() {
+			return new Promise((resolve, reject) => {
+				let key = Math.floor(Math.random() * 10)
+				let circles = d3.selectAll("circle")
+				circles.transition()
+					.delay(function (d, i) { return i * 5 })
+					.duration(duration)
+					.ease(d3.easeSin)
+					.attr("cx", function (d) { return x(0); })
+					.attr("cy", function (d) { return y(d.y); })
+					.on("start", function reColor() {
+						d3.select(this)
+							.style("fill", function () { return color(key) })
+					});
+				setTimeout(function () {
 					circles.remove();
 					resolve("transition end")
 				}, duration)
 			})
-		}	
+		}
 
+		document.querySelectorAll('.radio').forEach(item => {
+			console.log(item.value)
+			item.addEventListener('change', event => {
+				redraw(people[item.value])
+			})
+		})
 	</script>
 </body>
 
