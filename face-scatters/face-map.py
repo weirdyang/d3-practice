@@ -1,4 +1,5 @@
 # import the necessary packages
+# ATTRIBUTION: https://www.pyimagesearch.com/2017/04/03/facial-landmarks-dlib-opencv-python/
 import argparse
 import os
 from pathlib import Path
