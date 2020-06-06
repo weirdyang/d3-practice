@@ -319,21 +319,16 @@
 			.style("visibility", "hidden");
 		const tooltipContent = function createToolTip(model) {
 			return `<p>Year: ${model.year}</p>
-			<p>Month: ${model.month}</p>
+			<p>Month: ${model.readable_month}</p>
                 <p>Passengers: ${model.value}</p>`
 		}
 		const drawDots = function (dataNest) {
-			let startX = d3.scaleLinear()
-				.range([margin.left, width - margin.right])
-				.domain([0, 0]);
 			dataNest.forEach(function (data, index) {
 				svg.selectAll("dot")
 					.data(data.values)
 					.enter().append("circle")
 					.attr("class", `year-${data.key}`)
 					.attr("r", 3)
-					.attr("cx", function (d) { return startX(d.month); })
-					.attr("cy", function (d) { return y(d.value); })
 					.style("fill", function (d) { return color(data.key); })
 					.on("mouseover", function (d) {
 						return toolTip
@@ -351,17 +346,31 @@
 					})
 
 				let circles = d3.selectAll(`circle.year-${data.key}`)
-				addDotsTransitRight(circles);
+				addDotsTransitRight(circles, data.key);
 
 			})
 		}
-		const addDotsTransitRight = function (circles) {
+		const addDotsTransitRight = function (circles, key) {
 			circles.transition()
 				.delay(function (d, i) { return i * 5 })
 				.duration(duration)
 				.ease(d3.easeSin)
 				.attr("cx", function (d) { return x(d.month); })
 				.attr("cy", function (d) { return y(d.value); })
+				.on("start", function reset(){
+					d3.select(this)
+						.attr("cx", function(d){ return x(0)})
+						.attr("cy", function(d){ return y(d.value)})
+				})
+				.on("end", function blowUp(){
+					d3.select(this)
+						.style("fill", function(d){ return color(key)})
+						.transition()
+						.attr("r", 10)
+						.transition()
+						.attr("r", 3)
+						.style("fill", function(d){ return color(key)})
+				});
 		}
 		const drawMultiLines = function (dataNest) {
 			console.log(dataNest);
@@ -392,7 +401,7 @@
 				element.date = new Date(element.month);
 				element.year = element.date.getFullYear();
 				element.month = +element.date.getMonth();
-				//element.month = element.date.toLocaleString('default', { month: 'short' })
+				element.readable_month = element.date.toLocaleString('default', { month: 'short' })
 			})
 		}
 
