@@ -21,14 +21,16 @@
       background-color: white;
       font-family: 'Lato';
     }
-		.svg-container {
-			display: inline-block;
-			position: relative;
-			width: 100%;
-			padding-bottom: 100%;
-			vertical-align: top;
-			overflow: hidden;
-		}
+
+    .svg-container {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      padding-bottom: 100%;
+      vertical-align: top;
+      overflow: hidden;
+    }
+
     .axis,
     .axis text {
       fill: var(--line-chart-color);
@@ -103,11 +105,11 @@
     const heightOffset = margin.left > margin.bottom ? (margin.left - margin.bottom) : 0;
     const axisHeight = cellSize * 7 + margin.bottom + heightOffset;
     const axisWidth = cellSize * 24 + margin.left;
-    const legendWidth = width/3
+    const legendWidth = width / 3
     const legendHeight = 20;
-    const legendX = (width/2) - margin.right -margin.left
+    const legendX = (width / 2) - margin.right - margin.left
     const legendY = axisHeight + 50;
-    const x = d3.scaleBand().rangeRound([margin.left,axisWidth])
+    const x = d3.scaleBand().rangeRound([margin.left, axisWidth])
 
     const y = d3.scaleBand().rangeRound([axisHeight, margin.top])
 
@@ -115,11 +117,11 @@
     const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
     const hours = Array.from(Array(24).keys())
     //https://gka.github.io/palettes/
-    const colors =['#00429d', '#4771b3', '#72a2c9', '#a3d4e0', '#fdfdfb', '#ffbbc1', '#f47688', '#cf365b', '#93003a'];
+    const colors = ['#00429d', '#4771b3', '#72a2c9', '#a3d4e0', '#fdfdfb', '#ffbbc1', '#f47688', '#cf365b', '#93003a'];
     const buckets = 24;
     const groupedData = [];
     days.forEach(function (day, index) {
-      hours.forEach(function(hour, index){
+      hours.forEach(function (hour, index) {
         let elem = {};
         elem['day'] = day;
         elem['hour'] = hour;
@@ -129,9 +131,9 @@
     d3.json(url, function (error, json) {
       if (error) throw error;
       groupedData.forEach(elem => elem['value'] = json.filter(entry => entry['hour'] === elem['hour'] && entry['weekday'] === elem['day']).length)
-      colorScale = d3.scaleLinear()
-              .domain([0, d3.max(groupedData, function (d) { return d.value; })])
-              .range(['#225ea8','#ff0000']);
+      const colorScale = d3.scaleLinear()
+        .domain([0, d3.max(groupedData, function (d) { return d.value; })])
+        .range(['#225ea8', '#ff0000']);
       console.log(groupedData);
       const cellSize = x.bandwidth();
       const svg = d3.select("svg")
@@ -143,77 +145,77 @@
         .data(groupedData)
         .enter()
         .append('rect')
-        .attr('class',function(d){ return `"${d['hour']} ${d['day']} ${d['value']}"`})
-        .attr('x', function(d){return x(d['hour'])})
-        .attr('y', function(d){ return y(d['day'])})
+        .attr('class', function (d) { return `"${d['hour']} ${d['day']} ${d['value']}"` })
+        .attr('x', function (d) { return x(d['hour']) })
+        .attr('y', function (d) { return y(d['day']) })
         .attr('width', x.bandwidth())
         .attr('height', y.bandwidth())
-        .style('fill', function(d){ return colorScale(d['value'])});
+        .style('fill', function (d) { return colorScale(d['value']) });
 
-  
+
       const yAxis = d3.axisLeft(y);
       const xAxis = d3.axisBottom(x)
       svg.append("g")
         .attr("class", "axis y")
-        .attr("transform", "translate(" + (margin.left + 5)+ ", 0)")
+        .attr("transform", "translate(" + (margin.left + 5) + ", 0)")
         .call(yAxis);
       svg.append("g")
         .attr("class", "axis x")
         .attr("transform", "translate(0," + (axisHeight) + ")")
         .call(xAxis);
 
-        //Append a defs (for definition) element to your SVG
-var defs = svg.append("defs");
+      //Append a defs (for definition) element to your SVG
+      const defs = svg.append("defs");
 
-//ATTRIBUTION
-//https://www.visualcinnamon.com/2016/05/smooth-color-legend-d3-svg-gradient
-//Append a linearGradient element to the defs and give it a unique id
-var linearGradient = defs.append("linearGradient")
-    .attr("id", "linear-gradient");
-    linearGradient
-    .attr("x1", "0%")
-    .attr("y1", "0%")
-    .attr("x2", "100%")
-    .attr("y2", "0%");
-//Set the color for the start (0%)
-linearGradient.append("stop")
-    .attr("offset", "0%")
-    .attr("stop-color", "#225ea8"); //light blue
+      //ATTRIBUTION
+      //https://www.visualcinnamon.com/2016/05/smooth-color-legend-d3-svg-gradient
+      //Append a linearGradient element to the defs and give it a unique id
+      const linearGradient = defs.append("linearGradient")
+        .attr("id", "linear-gradient");
+      linearGradient
+        .attr("x1", "0%")
+        .attr("y1", "0%")
+        .attr("x2", "100%")
+        .attr("y2", "0%");
+      //Set the color for the start (0%)
+      linearGradient.append("stop")
+        .attr("offset", "0%")
+        .attr("stop-color", "#225ea8"); //light blue
 
-//Set the color for the end (100%)
-linearGradient.append("stop")
-    .attr("offset", "100%")
-    .attr("stop-color", "#ff0000"); //dark blue
+      //Set the color for the end (100%)
+      linearGradient.append("stop")
+        .attr("offset", "100%")
+        .attr("stop-color", "#ff0000"); //dark blue
 
-  svg.append("rect")
-    .attr("width", legendWidth)
-    .attr("height", legendHeight)
-    .style("fill", "url(#linear-gradient)")
-    .attr("class", "color-band")
-    .attr("transform", `translate(${legendX}, ${(axisHeight + 50 )})`)
+      svg.append("rect")
+        .attr("width", legendWidth)
+        .attr("height", legendHeight)
+        .style("fill", "url(#linear-gradient)")
+        .attr("class", "color-band")
+        .attr("transform", `translate(${legendX}, ${(axisHeight + 50)})`)
 
-    //svg.select('.color-band').append('text').text('hello').attr('dx', -500);
-    svg.append('text')
+      //svg.select('.color-band').append('text').text('hello').attr('dx', -500);
+      svg.append('text')
         .datum(groupedData)
-				.attr('x', `${legendX}`)
+        .attr('x', `${legendX}`)
         .attr('y', `${axisHeight + 50}`)
         .attr('dx', -5)
         .attr('dy', -5)
         .text(0);
-        svg.append('text')
-				.attr('x', `${legendX + legendWidth}`)
+      svg.append('text')
+        .attr('x', `${legendX + legendWidth}`)
         .attr('y', `${axisHeight + 50}`)
         .attr('dx', -20)
         .attr('dy', -5)
         .text(d3.max(groupedData, function (d) { return d.value; }));
 
-        svg.append('text')
-				.attr('x', `${legendWidth + width/9}`)
-        .attr('y', `${axisHeight+ 50}`)
+      svg.append('text')
+        .attr('x', `${legendWidth + width / 9}`)
+        .attr('y', `${axisHeight + 50}`)
         .attr('dy', 35)
         .text('Number of sightings');
     });
-    
+
 
 //Horizontal gradient
 

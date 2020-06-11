@@ -134,8 +134,8 @@
     d3.json(url, function (error, json) {
       if (error) throw error;
       groupedData.forEach(elem => elem['value'] = json.filter(entry => entry['hour'] === elem['hour'] && entry['weekday'] === elem['day']).length)
-      let rangeMax = d3.max(groupedData, function (d) { return d.value; });
-      let colorScale = d3.scaleLinear()
+      const rangeMax = d3.max(groupedData, function (d) { return d.value; });
+      const colorScale = d3.scaleLinear()
         .domain([0, rangeMax / 2, rangeMax])
         .range(['#225ea8', '#ffffff', '#ff0000']);
       console.log(groupedData);
@@ -169,7 +169,7 @@
         .call(xAxis);
 
       //Append a defs (for definition) element to your SVG
-      var defs = svg.append("defs");
+      const defs = svg.append("defs");
 
       //ATTRIBUTION
       //https://www.visualcinnamon.com/2016/05/smooth-color-legend-d3-svg-gradient
