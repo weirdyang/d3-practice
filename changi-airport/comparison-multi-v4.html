@@ -21,7 +21,14 @@
 			background-color: white;
 			font-family: 'Lato';
 		}
-
+		.svg-container {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      padding-bottom: 100%;
+      vertical-align: top;
+      overflow: hidden;
+    }
 		.btn {
 			background-color: rgba(0, 0, 0, .75);
 			border-radius: 5px;
@@ -112,10 +119,12 @@
 		<label for="update">Click to change range</label>
 		<button class="btn" id="update" onclick="redraw()">2019-2020</button>
 	</div>
-	<svg width=1200 height=720>
+	<div class="svg-container">
+		<svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 1200 720">
 		<text class="title" x=40 y=50>d3.annotation()</text>
 		<text x=40 y=80>Civil Aircraft Passengers per Month - Singapore Changi Airport</text>
 	</svg>
+	</div>
 	<script src="https://d3js.org/d3.v4.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.12.1/d3-annotation.min.js"></script>
 	<script src="divided-line.js"></script>
