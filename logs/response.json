@@ -1,0 +1,4321 @@
+[
+  {
+    "id": 6164,
+    "level": "Fatal",
+    "message": "{ message: \"Eduardo-starfruit\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Eduardo-starfruit\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:24.183+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:24.496+00:00",
+    "modified": "2020-08-13T15:40:24.496+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6163,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Eduardo\", Surname: \"Aufderhar\", SocialSecurityNumber: \"574-77-1361\" } placed Order { Id: 1328, Item: \"starfruit\", Quantity: 3 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Eduardo\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Aufderhar\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"574-77-1361\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1328"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"starfruit\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "3"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:24.17+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:24.496+00:00",
+    "modified": "2020-08-13T15:40:24.496+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6162,
+    "level": "Debug",
+    "message": "{ message: \"Charlotte-banana\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Charlotte-banana\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:23.169+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:24.496+00:00",
+    "modified": "2020-08-13T15:40:24.496+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6161,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Charlotte\", Surname: \"Kihn\", SocialSecurityNumber: \"508-73-6048\" } placed Order { Id: 1327, Item: \"banana\", Quantity: 8 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Charlotte\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Kihn\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"508-73-6048\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1327"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"banana\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "8"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:23.161+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:24.496+00:00",
+    "modified": "2020-08-13T15:40:24.496+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6160,
+    "level": "Information",
+    "message": "{ message: \"Manley-orange\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Manley-orange\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:22.157+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:22.374+00:00",
+    "modified": "2020-08-13T15:40:22.374+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6159,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Manley\", Surname: \"Schimmel\", SocialSecurityNumber: \"440-02-5785\" } placed Order { Id: 1326, Item: \"orange\", Quantity: 6 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Manley\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Schimmel\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"440-02-5785\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1326"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"orange\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "6"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:22.092+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:22.374+00:00",
+    "modified": "2020-08-13T15:40:22.374+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6158,
+    "level": "Debug",
+    "message": "{ message: \"Maiya-banana\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Maiya-banana\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:21.091+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:22.374+00:00",
+    "modified": "2020-08-13T15:40:22.374+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6157,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Maiya\", Surname: \"Kovacek\", SocialSecurityNumber: \"211-00-2040\" } placed Order { Id: 1325, Item: \"banana\", Quantity: 3 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Maiya\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Kovacek\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"211-00-2040\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1325"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"banana\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "3"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:21.079+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:22.374+00:00",
+    "modified": "2020-08-13T15:40:22.374+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6156,
+    "level": "Error",
+    "message": "Exception occured",
+    "properties": {
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:20.074+00:00",
+    "exception": "System.ArgumentNullException: Value cannot be null.\r\nParameter name: customer",
+    "created": "2020-08-13T15:40:20.245+00:00",
+    "modified": "2020-08-13T15:40:20.245+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6155,
+    "level": "Verbose",
+    "message": "{ message: \"Raleigh-apple\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Raleigh-apple\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:20.074+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:20.245+00:00",
+    "modified": "2020-08-13T15:40:20.245+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6154,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Raleigh\", Surname: \"Weber\", SocialSecurityNumber: \"794-04-5236\" } placed Order { Id: 1324, Item: \"apple\", Quantity: 9 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Raleigh\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Weber\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"794-04-5236\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1324"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"apple\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "9"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:20.061+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:20.245+00:00",
+    "modified": "2020-08-13T15:40:20.245+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6153,
+    "level": "Error",
+    "message": "Exception occured",
+    "properties": {
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:19.052+00:00",
+    "exception": "System.ArgumentNullException: Value cannot be null.\r\nParameter name: customer",
+    "created": "2020-08-13T15:40:20.245+00:00",
+    "modified": "2020-08-13T15:40:20.245+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6152,
+    "level": "Verbose",
+    "message": "{ message: \"Eda-apple\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Eda-apple\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:19.052+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:20.245+00:00",
+    "modified": "2020-08-13T15:40:20.245+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6151,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Eda\", Surname: \"Doyle\", SocialSecurityNumber: \"344-79-0483\" } placed Order { Id: 1323, Item: \"apple\", Quantity: 8 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Eda\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Doyle\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"344-79-0483\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1323"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"apple\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "8"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:19.036+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:20.245+00:00",
+    "modified": "2020-08-13T15:40:20.245+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6150,
+    "level": "Fatal",
+    "message": "{ message: \"Rosie-starfruit\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Rosie-starfruit\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:18.028+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:18.089+00:00",
+    "modified": "2020-08-13T15:40:18.089+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6149,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Rosie\", Surname: \"Walker\", SocialSecurityNumber: \"433-57-2491\" } placed Order { Id: 1322, Item: \"starfruit\", Quantity: 2 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Rosie\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Walker\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"433-57-2491\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1322"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"starfruit\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "2"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:18.019+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:18.089+00:00",
+    "modified": "2020-08-13T15:40:18.089+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6148,
+    "level": "Error",
+    "message": "{ message: \"Karlie-kiwi\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Karlie-kiwi\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:17.015+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:18.089+00:00",
+    "modified": "2020-08-13T15:40:18.089+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6147,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Karlie\", Surname: \"Berge\", SocialSecurityNumber: \"293-36-3673\" } placed Order { Id: 1321, Item: \"kiwi\", Quantity: 6 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Karlie\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Berge\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"293-36-3673\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1321"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"kiwi\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "6"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:17.002+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:18.089+00:00",
+    "modified": "2020-08-13T15:40:18.089+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6146,
+    "level": "Debug",
+    "message": "{ message: \"Mariana-banana\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Mariana-banana\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:16.001+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:18.089+00:00",
+    "modified": "2020-08-13T15:40:18.089+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6145,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Mariana\", Surname: \"Cummings\", SocialSecurityNumber: \"411-12-0412\" } placed Order { Id: 1320, Item: \"banana\", Quantity: 6 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Mariana\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Cummings\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"411-12-0412\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1320"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"banana\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "6"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:15.988+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:18.089+00:00",
+    "modified": "2020-08-13T15:40:18.089+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6144,
+    "level": "Warning",
+    "message": "{ message: \"Reyna-strawberry\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Reyna-strawberry\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:14.983+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:16+00:00",
+    "modified": "2020-08-13T15:40:16+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6143,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Reyna\", Surname: \"O'Connell\", SocialSecurityNumber: \"915-99-6011\" } placed Order { Id: 1319, Item: \"strawberry\", Quantity: 2 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Reyna\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"O'Connell\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"915-99-6011\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1319"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"strawberry\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "2"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:14.972+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:16+00:00",
+    "modified": "2020-08-13T15:40:16+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6142,
+    "level": "Information",
+    "message": "{ message: \"Ignacio-orange\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Ignacio-orange\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:13.966+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:16+00:00",
+    "modified": "2020-08-13T15:40:16+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6141,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Ignacio\", Surname: \"Johnson\", SocialSecurityNumber: \"734-00-6023\" } placed Order { Id: 1318, Item: \"orange\", Quantity: 4 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Ignacio\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Johnson\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"734-00-6023\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1318"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"orange\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "4"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:13.957+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:16+00:00",
+    "modified": "2020-08-13T15:40:16+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6140,
+    "level": "Fatal",
+    "message": "{ message: \"Willa-starfruit\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Willa-starfruit\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:12.952+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:13.917+00:00",
+    "modified": "2020-08-13T15:40:13.917+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6139,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Willa\", Surname: \"Murazik\", SocialSecurityNumber: \"717-54-3918\" } placed Order { Id: 1317, Item: \"starfruit\", Quantity: 2 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Willa\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Murazik\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"717-54-3918\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1317"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"starfruit\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "2"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:12.945+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:13.917+00:00",
+    "modified": "2020-08-13T15:40:13.917+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6138,
+    "level": "Error",
+    "message": "Exception occured",
+    "properties": {
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:11.936+00:00",
+    "exception": "System.ArgumentNullException: Value cannot be null.\r\nParameter name: customer",
+    "created": "2020-08-13T15:40:13.917+00:00",
+    "modified": "2020-08-13T15:40:13.917+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6137,
+    "level": "Verbose",
+    "message": "{ message: \"Antone-apple\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Antone-apple\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:11.936+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:13.917+00:00",
+    "modified": "2020-08-13T15:40:13.917+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6136,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Antone\", Surname: \"Haley\", SocialSecurityNumber: \"911-85-9596\" } placed Order { Id: 1316, Item: \"apple\", Quantity: 10 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Antone\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Haley\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"911-85-9596\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1316"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"apple\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "10"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:11.928+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:13.917+00:00",
+    "modified": "2020-08-13T15:40:13.917+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6135,
+    "level": "Warning",
+    "message": "{ message: \"Michale-strawberry\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Michale-strawberry\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:10.921+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:11.831+00:00",
+    "modified": "2020-08-13T15:40:11.831+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6134,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Michale\", Surname: \"Leuschke\", SocialSecurityNumber: \"615-07-9681\" } placed Order { Id: 1315, Item: \"strawberry\", Quantity: 8 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Michale\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Leuschke\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"615-07-9681\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1315"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"strawberry\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "8"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:10.913+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:11.831+00:00",
+    "modified": "2020-08-13T15:40:11.831+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6133,
+    "level": "Debug",
+    "message": "{ message: \"Alayna-banana\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Alayna-banana\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:09.912+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:11.831+00:00",
+    "modified": "2020-08-13T15:40:11.831+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6132,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Alayna\", Surname: \"Hagenes\", SocialSecurityNumber: \"263-05-3556\" } placed Order { Id: 1314, Item: \"banana\", Quantity: 10 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Alayna\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Hagenes\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"263-05-3556\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1314"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"banana\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "10"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:09.897+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:11.831+00:00",
+    "modified": "2020-08-13T15:40:11.831+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6131,
+    "level": "Error",
+    "message": "Exception occured",
+    "properties": {
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:08.889+00:00",
+    "exception": "System.ArgumentNullException: Value cannot be null.\r\nParameter name: customer",
+    "created": "2020-08-13T15:40:09.761+00:00",
+    "modified": "2020-08-13T15:40:09.761+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6130,
+    "level": "Verbose",
+    "message": "{ message: \"Marion-apple\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Marion-apple\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:08.888+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:09.761+00:00",
+    "modified": "2020-08-13T15:40:09.761+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6129,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Marion\", Surname: \"Gislason\", SocialSecurityNumber: \"163-66-4964\" } placed Order { Id: 1313, Item: \"apple\", Quantity: 7 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Marion\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Gislason\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"163-66-4964\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1313"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"apple\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "7"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:08.871+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:09.761+00:00",
+    "modified": "2020-08-13T15:40:09.761+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6128,
+    "level": "Debug",
+    "message": "{ message: \"Beau-banana\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Beau-banana\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:07.87+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:09.761+00:00",
+    "modified": "2020-08-13T15:40:09.761+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6127,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Beau\", Surname: \"Schultz\", SocialSecurityNumber: \"376-52-9820\" } placed Order { Id: 1312, Item: \"banana\", Quantity: 1 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Beau\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Schultz\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"376-52-9820\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1312"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"banana\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "1"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:07.854+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:09.761+00:00",
+    "modified": "2020-08-13T15:40:09.761+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6126,
+    "level": "Error",
+    "message": "Exception occured",
+    "properties": {
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:06.848+00:00",
+    "exception": "System.ArgumentNullException: Value cannot be null.\r\nParameter name: customer",
+    "created": "2020-08-13T15:40:07.677+00:00",
+    "modified": "2020-08-13T15:40:07.677+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6125,
+    "level": "Verbose",
+    "message": "{ message: \"Stevie-apple\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Stevie-apple\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:06.848+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:07.677+00:00",
+    "modified": "2020-08-13T15:40:07.677+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6124,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Stevie\", Surname: \"Stokes\", SocialSecurityNumber: \"190-31-3216\" } placed Order { Id: 1311, Item: \"apple\", Quantity: 5 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Stevie\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Stokes\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"190-31-3216\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1311"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"apple\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "5"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:06.833+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:07.677+00:00",
+    "modified": "2020-08-13T15:40:07.677+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6123,
+    "level": "Error",
+    "message": "{ message: \"Sally-kiwi\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Sally-kiwi\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:05.828+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:07.677+00:00",
+    "modified": "2020-08-13T15:40:07.677+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6122,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Sally\", Surname: \"Kuvalis\", SocialSecurityNumber: \"767-63-0962\" } placed Order { Id: 1310, Item: \"kiwi\", Quantity: 6 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Sally\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Kuvalis\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"767-63-0962\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1310"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"kiwi\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "6"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:05.819+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:07.677+00:00",
+    "modified": "2020-08-13T15:40:07.677+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6121,
+    "level": "Information",
+    "message": "{ message: \"Liliana-orange\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Liliana-orange\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:04.814+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:05.6+00:00",
+    "modified": "2020-08-13T15:40:05.6+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6120,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Liliana\", Surname: \"Wisozk\", SocialSecurityNumber: \"949-85-6163\" } placed Order { Id: 1309, Item: \"orange\", Quantity: 7 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Liliana\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Wisozk\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"949-85-6163\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1309"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"orange\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "7"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:04.807+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:05.6+00:00",
+    "modified": "2020-08-13T15:40:05.6+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6119,
+    "level": "Warning",
+    "message": "{ message: \"Sam-strawberry\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Sam-strawberry\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:03.801+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:05.6+00:00",
+    "modified": "2020-08-13T15:40:05.6+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6118,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Sam\", Surname: \"Heidenreich\", SocialSecurityNumber: \"975-67-8883\" } placed Order { Id: 1308, Item: \"strawberry\", Quantity: 3 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Sam\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Heidenreich\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"975-67-8883\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1308"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"strawberry\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "3"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:03.794+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:05.6+00:00",
+    "modified": "2020-08-13T15:40:05.6+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6117,
+    "level": "Information",
+    "message": "{ message: \"Pietro-orange\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Pietro-orange\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:02.787+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:03.511+00:00",
+    "modified": "2020-08-13T15:40:03.511+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6116,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Pietro\", Surname: \"Schumm\", SocialSecurityNumber: \"776-80-6439\" } placed Order { Id: 1307, Item: \"orange\", Quantity: 10 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Pietro\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Schumm\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"776-80-6439\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1307"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"orange\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "10"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:02.771+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:03.511+00:00",
+    "modified": "2020-08-13T15:40:03.511+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6115,
+    "level": "Warning",
+    "message": "{ message: \"Austin-strawberry\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Austin-strawberry\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:01.767+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:03.511+00:00",
+    "modified": "2020-08-13T15:40:03.511+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6114,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Austin\", Surname: \"Cole\", SocialSecurityNumber: \"660-89-2415\" } placed Order { Id: 1306, Item: \"strawberry\", Quantity: 10 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Austin\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Cole\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"660-89-2415\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1306"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"strawberry\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "10"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:01.753+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:03.511+00:00",
+    "modified": "2020-08-13T15:40:03.511+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6113,
+    "level": "Warning",
+    "message": "{ message: \"Verona-strawberry\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Verona-strawberry\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:00.744+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:01.432+00:00",
+    "modified": "2020-08-13T15:40:01.432+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6112,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Verona\", Surname: \"Breitenberg\", SocialSecurityNumber: \"416-94-1126\" } placed Order { Id: 1305, Item: \"strawberry\", Quantity: 4 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Verona\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Breitenberg\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"416-94-1126\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1305"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"strawberry\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "4"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:40:00.728+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:01.432+00:00",
+    "modified": "2020-08-13T15:40:01.432+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6111,
+    "level": "Fatal",
+    "message": "{ message: \"Sonny-starfruit\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Sonny-starfruit\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:59.721+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:01.432+00:00",
+    "modified": "2020-08-13T15:40:01.432+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6110,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Sonny\", Surname: \"Streich\", SocialSecurityNumber: \"332-99-0234\" } placed Order { Id: 1304, Item: \"starfruit\", Quantity: 2 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Sonny\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Streich\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"332-99-0234\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1304"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"starfruit\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "2"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:59.714+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:40:01.432+00:00",
+    "modified": "2020-08-13T15:40:01.432+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6109,
+    "level": "Fatal",
+    "message": "{ message: \"Abdul-starfruit\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Abdul-starfruit\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:58.71+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:59.335+00:00",
+    "modified": "2020-08-13T15:39:59.335+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6108,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Abdul\", Surname: \"West\", SocialSecurityNumber: \"207-45-4567\" } placed Order { Id: 1303, Item: \"starfruit\", Quantity: 1 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Abdul\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"West\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"207-45-4567\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1303"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"starfruit\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "1"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:58.695+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:59.335+00:00",
+    "modified": "2020-08-13T15:39:59.335+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6107,
+    "level": "Error",
+    "message": "{ message: \"Collin-kiwi\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Collin-kiwi\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:57.688+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:59.335+00:00",
+    "modified": "2020-08-13T15:39:59.335+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6106,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Collin\", Surname: \"O'Reilly\", SocialSecurityNumber: \"683-39-9027\" } placed Order { Id: 1302, Item: \"kiwi\", Quantity: 8 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Collin\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"O'Reilly\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"683-39-9027\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1302"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"kiwi\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "8"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:57.68+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:59.335+00:00",
+    "modified": "2020-08-13T15:39:59.335+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6105,
+    "level": "Warning",
+    "message": "{ message: \"Cornell-strawberry\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Cornell-strawberry\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:56.672+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:57.253+00:00",
+    "modified": "2020-08-13T15:39:57.253+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6104,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Cornell\", Surname: \"Stroman\", SocialSecurityNumber: \"628-12-9615\" } placed Order { Id: 1301, Item: \"strawberry\", Quantity: 2 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Cornell\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Stroman\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"628-12-9615\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1301"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"strawberry\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "2"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:56.663+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:57.253+00:00",
+    "modified": "2020-08-13T15:39:57.253+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6103,
+    "level": "Error",
+    "message": "Exception occured",
+    "properties": {
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:55.654+00:00",
+    "exception": "System.ArgumentNullException: Value cannot be null.\r\nParameter name: customer",
+    "created": "2020-08-13T15:39:57.253+00:00",
+    "modified": "2020-08-13T15:39:57.253+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6102,
+    "level": "Verbose",
+    "message": "{ message: \"Zander-apple\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Zander-apple\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:55.654+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:57.253+00:00",
+    "modified": "2020-08-13T15:39:57.253+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6101,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Zander\", Surname: \"Johnson\", SocialSecurityNumber: \"451-49-0753\" } placed Order { Id: 1300, Item: \"apple\", Quantity: 4 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Zander\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Johnson\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"451-49-0753\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1300"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"apple\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "4"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:55.647+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:57.253+00:00",
+    "modified": "2020-08-13T15:39:57.253+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6100,
+    "level": "Error",
+    "message": "Exception occured",
+    "properties": {
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:54.641+00:00",
+    "exception": "System.ArgumentNullException: Value cannot be null.\r\nParameter name: customer",
+    "created": "2020-08-13T15:39:55.114+00:00",
+    "modified": "2020-08-13T15:39:55.114+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6099,
+    "level": "Verbose",
+    "message": "{ message: \"Reilly-apple\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Reilly-apple\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:54.641+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:55.114+00:00",
+    "modified": "2020-08-13T15:39:55.114+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6098,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Reilly\", Surname: \"Goyette\", SocialSecurityNumber: \"758-74-4190\" } placed Order { Id: 1299, Item: \"apple\", Quantity: 4 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Reilly\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Goyette\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"758-74-4190\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1299"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"apple\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "4"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:54.629+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:55.114+00:00",
+    "modified": "2020-08-13T15:39:55.114+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6097,
+    "level": "Fatal",
+    "message": "{ message: \"Toby-starfruit\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Toby-starfruit\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:53.626+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:55.114+00:00",
+    "modified": "2020-08-13T15:39:55.114+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6096,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Toby\", Surname: \"Hartmann\", SocialSecurityNumber: \"402-06-1384\" } placed Order { Id: 1298, Item: \"starfruit\", Quantity: 4 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Toby\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Hartmann\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"402-06-1384\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1298"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"starfruit\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "4"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:53.614+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:55.114+00:00",
+    "modified": "2020-08-13T15:39:55.114+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6095,
+    "level": "Error",
+    "message": "Exception occured",
+    "properties": {
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:52.602+00:00",
+    "exception": "System.ArgumentNullException: Value cannot be null.\r\nParameter name: customer",
+    "created": "2020-08-13T15:39:53.011+00:00",
+    "modified": "2020-08-13T15:39:53.011+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6094,
+    "level": "Verbose",
+    "message": "{ message: \"Leda-apple\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Leda-apple\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:52.602+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:53.011+00:00",
+    "modified": "2020-08-13T15:39:53.011+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6093,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Leda\", Surname: \"Schamberger\", SocialSecurityNumber: \"613-44-3299\" } placed Order { Id: 1297, Item: \"apple\", Quantity: 1 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Leda\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Schamberger\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"613-44-3299\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1297"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"apple\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "1"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:52.586+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:53.011+00:00",
+    "modified": "2020-08-13T15:39:53.011+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6092,
+    "level": "Warning",
+    "message": "{ message: \"Price-strawberry\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Price-strawberry\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:51.582+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:53.011+00:00",
+    "modified": "2020-08-13T15:39:53.011+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6091,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Price\", Surname: \"Baumbach\", SocialSecurityNumber: \"411-78-8162\" } placed Order { Id: 1296, Item: \"strawberry\", Quantity: 9 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Price\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Baumbach\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"411-78-8162\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1296"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"strawberry\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "9"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:51.57+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:53.011+00:00",
+    "modified": "2020-08-13T15:39:53.011+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6090,
+    "level": "Fatal",
+    "message": "{ message: \"Name-starfruit\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Name-starfruit\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:50.565+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:50.934+00:00",
+    "modified": "2020-08-13T15:39:50.934+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6089,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Name\", Surname: \"Kling\", SocialSecurityNumber: \"902-77-7274\" } placed Order { Id: 1295, Item: \"starfruit\", Quantity: 8 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Name\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Kling\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"902-77-7274\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1295"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"starfruit\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "8"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:50.553+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:50.934+00:00",
+    "modified": "2020-08-13T15:39:50.934+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6088,
+    "level": "Error",
+    "message": "Exception occured",
+    "properties": {
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:49.548+00:00",
+    "exception": "System.ArgumentNullException: Value cannot be null.\r\nParameter name: customer",
+    "created": "2020-08-13T15:39:50.934+00:00",
+    "modified": "2020-08-13T15:39:50.934+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6087,
+    "level": "Verbose",
+    "message": "{ message: \"Fatima-apple\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Fatima-apple\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:49.548+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:50.934+00:00",
+    "modified": "2020-08-13T15:39:50.934+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6086,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Fatima\", Surname: \"Wunsch\", SocialSecurityNumber: \"459-19-8055\" } placed Order { Id: 1294, Item: \"apple\", Quantity: 6 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Fatima\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Wunsch\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"459-19-8055\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1294"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"apple\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "6"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:49.54+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:50.934+00:00",
+    "modified": "2020-08-13T15:39:50.934+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6085,
+    "level": "Error",
+    "message": "Exception occured",
+    "properties": {
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:48.53+00:00",
+    "exception": "System.ArgumentNullException: Value cannot be null.\r\nParameter name: customer",
+    "created": "2020-08-13T15:39:48.857+00:00",
+    "modified": "2020-08-13T15:39:48.857+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6084,
+    "level": "Verbose",
+    "message": "{ message: \"Constance-apple\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Constance-apple\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:48.53+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:48.857+00:00",
+    "modified": "2020-08-13T15:39:48.857+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6083,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Constance\", Surname: \"Volkman\", SocialSecurityNumber: \"959-93-9136\" } placed Order { Id: 1293, Item: \"apple\", Quantity: 3 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Constance\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Volkman\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"959-93-9136\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1293"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"apple\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "3"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:48.521+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:48.857+00:00",
+    "modified": "2020-08-13T15:39:48.857+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6082,
+    "level": "Error",
+    "message": "{ message: \"Edward-kiwi\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Edward-kiwi\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:47.516+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:48.857+00:00",
+    "modified": "2020-08-13T15:39:48.857+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6081,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Edward\", Surname: \"Kuhic\", SocialSecurityNumber: \"390-56-6087\" } placed Order { Id: 1292, Item: \"kiwi\", Quantity: 6 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Edward\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Kuhic\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"390-56-6087\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1292"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"kiwi\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "6"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:47.507+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:48.857+00:00",
+    "modified": "2020-08-13T15:39:48.857+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6080,
+    "level": "Information",
+    "message": "{ message: \"Arch-orange\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Arch-orange\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:46.501+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:46.76+00:00",
+    "modified": "2020-08-13T15:39:46.76+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6079,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Arch\", Surname: \"Buckridge\", SocialSecurityNumber: \"453-46-4477\" } placed Order { Id: 1291, Item: \"orange\", Quantity: 4 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Arch\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Buckridge\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"453-46-4477\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1291"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"orange\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "4"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:46.494+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:46.76+00:00",
+    "modified": "2020-08-13T15:39:46.76+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6078,
+    "level": "Error",
+    "message": "Exception occured",
+    "properties": {
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:45.481+00:00",
+    "exception": "System.ArgumentNullException: Value cannot be null.\r\nParameter name: customer",
+    "created": "2020-08-13T15:39:46.76+00:00",
+    "modified": "2020-08-13T15:39:46.76+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6077,
+    "level": "Verbose",
+    "message": "{ message: \"Verda-apple\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Verda-apple\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:45.48+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:46.76+00:00",
+    "modified": "2020-08-13T15:39:46.76+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6076,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Verda\", Surname: \"Prohaska\", SocialSecurityNumber: \"931-30-8062\" } placed Order { Id: 1290, Item: \"apple\", Quantity: 7 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Verda\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Prohaska\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"931-30-8062\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1290"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"apple\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "7"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:45.466+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:46.76+00:00",
+    "modified": "2020-08-13T15:39:46.76+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6075,
+    "level": "Warning",
+    "message": "{ message: \"Lucio-strawberry\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Lucio-strawberry\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:44.458+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:44.673+00:00",
+    "modified": "2020-08-13T15:39:44.673+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6074,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Lucio\", Surname: \"Lesch\", SocialSecurityNumber: \"245-24-0658\" } placed Order { Id: 1289, Item: \"strawberry\", Quantity: 9 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Lucio\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Lesch\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"245-24-0658\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1289"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"strawberry\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "9"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:44.45+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:44.673+00:00",
+    "modified": "2020-08-13T15:39:44.673+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6073,
+    "level": "Fatal",
+    "message": "{ message: \"Kenna-starfruit\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Kenna-starfruit\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:43.444+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:44.673+00:00",
+    "modified": "2020-08-13T15:39:44.673+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6072,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Kenna\", Surname: \"Maggio\", SocialSecurityNumber: \"325-05-6075\" } placed Order { Id: 1288, Item: \"starfruit\", Quantity: 9 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Kenna\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Maggio\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"325-05-6075\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1288"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"starfruit\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "9"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:43.437+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:44.673+00:00",
+    "modified": "2020-08-13T15:39:44.673+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6071,
+    "level": "Fatal",
+    "message": "{ message: \"Kyla-starfruit\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Kyla-starfruit\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:42.43+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:42.597+00:00",
+    "modified": "2020-08-13T15:39:42.597+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6070,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Kyla\", Surname: \"Bartoletti\", SocialSecurityNumber: \"052-02-9885\" } placed Order { Id: 1287, Item: \"starfruit\", Quantity: 5 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Kyla\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Bartoletti\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"052-02-9885\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1287"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"starfruit\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "5"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:42.41+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:42.597+00:00",
+    "modified": "2020-08-13T15:39:42.597+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6069,
+    "level": "Warning",
+    "message": "{ message: \"Cody-strawberry\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Cody-strawberry\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:41.404+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:42.597+00:00",
+    "modified": "2020-08-13T15:39:42.597+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6068,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Cody\", Surname: \"Bernier\", SocialSecurityNumber: \"893-61-5320\" } placed Order { Id: 1286, Item: \"strawberry\", Quantity: 2 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Cody\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Bernier\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"893-61-5320\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1286"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"strawberry\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "2"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:41.39+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:42.597+00:00",
+    "modified": "2020-08-13T15:39:42.597+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6067,
+    "level": "Fatal",
+    "message": "{ message: \"Nicklaus-starfruit\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Nicklaus-starfruit\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:40.385+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:40.498+00:00",
+    "modified": "2020-08-13T15:39:40.498+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6066,
+    "level": "Information",
+    "message": "Customer { FirstName: \"Nicklaus\", Surname: \"Sanford\", SocialSecurityNumber: \"311-15-8110\" } placed Order { Id: 1285, Item: \"starfruit\", Quantity: 9 }",
+    "properties": {
+      "customer": {
+        "TypeTag": "\"Customer\"",
+        "Properties": [
+          {
+            "Name": "\"FirstName\"",
+            "Value": {
+              "Value": "\"Nicklaus\""
+            }
+          },
+          {
+            "Name": "\"Surname\"",
+            "Value": {
+              "Value": "\"Sanford\""
+            }
+          },
+          {
+            "Name": "\"SocialSecurityNumber\"",
+            "Value": {
+              "Value": "\"311-15-8110\""
+            }
+          }
+        ]
+      },
+      "order": {
+        "TypeTag": "\"Order\"",
+        "Properties": [
+          {
+            "Name": "\"Id\"",
+            "Value": {
+              "Value": "1285"
+            }
+          },
+          {
+            "Name": "\"Item\"",
+            "Value": {
+              "Value": "\"starfruit\""
+            }
+          },
+          {
+            "Name": "\"Quantity\"",
+            "Value": {
+              "Value": "9"
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:40.376+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:40.498+00:00",
+    "modified": "2020-08-13T15:39:40.498+00:00",
+    "userId": 1
+  },
+  {
+    "id": 6065,
+    "level": "Error",
+    "message": "{ message: \"Harmon-kiwi\" }",
+    "properties": {
+      "custom": {
+        "TypeTag": "null",
+        "Properties": [
+          {
+            "Name": "\"message\"",
+            "Value": {
+              "Value": "\"Harmon-kiwi\""
+            }
+          }
+        ]
+      },
+      "SourceContext": {
+        "Value": "\"Sample.Program\""
+      },
+      "Application": {
+        "Value": "\"Sample\""
+      }
+    },
+    "timeStamp": "2020-08-13T15:39:39.374+00:00",
+    "exception": null,
+    "created": "2020-08-13T15:39:40.498+00:00",
+    "modified": "2020-08-13T15:39:40.498+00:00",
+    "userId": 1
+  }
+]
