@@ -300,31 +300,31 @@
 				.call(xAxis);
 		}
 
-
-		const xi = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/face-scatters/data/xi.json';
-		const hillary = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/face-scatters/data/hillary.json'
-		const trudeau = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/face-scatters/data/trudeau.json'
-		const trump = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/face-scatters/data/trump.json'
+		const baseUrl = 'https://raw.githubusercontent.com/weirdyang/d3-practice/master/face-scatters';
+		const xi = `${baseUrl}/data/xi.json`;
+		const hillary = `${baseUrl}/data/hillary.json`
+		const trudeau = `${baseUrl}/data/trudeau.json`
+		const trump = `${baseUrl}/data/trump.json`
 		const imageDiv = document.getElementById('card-image')
 		const imageName = document.getElementById('card-name')
 		const app = {
 			'trump': {
-				'src': 'https://github.com/captmomo/d3-practice/blob/master/face-scatters/images/trump.jpg?raw=true',
+				'src': '../images/trump.jpg?raw=true',
 				'name': 'Donald Trump',
 				'url': trump,
 			},
 			'trudeau': {
-				'src': 'https://github.com/captmomo/d3-practice/blob/master/face-scatters/images/trudeau.jpg?raw=true',
+				'src': '../images/trudeau.jpg?raw=true',
 				'name': 'Justin Trudeau',
 				'url': trudeau,
 			},
 			'hillary': {
-				'src': 'https://github.com/captmomo/d3-practice/blob/master/face-scatters/images/hillary.jpg?raw=true',
+				'src': '../images/hillary.jpg?raw=true',
 				'name': 'Hillary Clinton',
 				'url': hillary,
 			},
 			'xi': {
-				'src': 'https://github.com/captmomo/d3-practice/blob/master/face-scatters/images/xi.jpg?raw=true',
+				'src': '../images/xi.jpg?raw=true',
 				'name': 'Xi Jinping',
 				'url': xi,
 			},
