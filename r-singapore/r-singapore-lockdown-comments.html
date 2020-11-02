@@ -94,14 +94,14 @@
             .domain([new Date('3/1/2020'), new Date('6/1/2020') ])
       const y = d3.scaleLinear().range([height - margin.bottom, margin.top ])
             .domain([400, 2000])
-      const url = "https://gist.githubusercontent.com/captmomo/55a33ba68269ca49e518d99478820f1f/raw/3466e565ade86b8d0fb21d3a0f4e482bd7af26b8/covid10apr2020.json";
+      const url = "https://gist.githubusercontent.com/weirdyang/55a33ba68269ca49e518d99478820f1f/raw/3466e565ade86b8d0fb21d3a0f4e482bd7af26b8/covid10apr2020.json";
       
       let fetchData = fetch(url)
         .then(res => res.json())
         .then(result =>{
           return result.data
         })
-      d3.json("https://gist.githubusercontent.com/captmomo/78e1d0bc7bdf8df0dee882a29cba4220/raw/c17bd6ed254c2195131b635d60b988d57c7633c1/gistfile1.json", function(error, json) {
+      d3.json("https://gist.githubusercontent.com/weirdyang/78e1d0bc7bdf8df0dee882a29cba4220/raw/c17bd6ed254c2195131b635d60b988d57c7633c1/gistfile1.json", function(error, json) {
         if (error) throw error;
         console.log(new Date(json[0].created_utc *1000));
         var line = d3.line()
