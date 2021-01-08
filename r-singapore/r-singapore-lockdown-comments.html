@@ -77,21 +77,21 @@
     </style>
 </head>
 <body>
-    <svg width=960 height=500>
+    <svg width=1200 height=600>
       <text class="title" x=40 y=50>d3.annotation()</text>
-      <text x=40 y=80>r/singapore daily thread comment count during lockdown</text>
+      <text x=40 y=80>r/singapore daily thread comment count from lockdown to phase 2</text>
     </svg>
     <script src="https://d3js.org/d3.v4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.12.1/d3-annotation.min.js"></script>
     <script src="divided-line.js"></script>
     <script>
      
-      const width = 960
-      const height = 500
+      const width = 1200
+      const height = 600
       const margin = { top: 180, bottom: 50, left: 50, right: 50}
 
       const x = d3.scaleTime().range([margin.left, width - margin.right ])
-            .domain([new Date('3/1/2020'), new Date('6/1/2020') ])
+            .domain([new Date('3/1/2020'), new Date('11/20/2020') ])
       const y = d3.scaleLinear().range([height - margin.bottom, margin.top ])
             .domain([400, 2000])
       const url = "https://gist.githubusercontent.com/weirdyang/55a33ba68269ca49e518d99478820f1f/raw/3466e565ade86b8d0fb21d3a0f4e482bd7af26b8/covid10apr2020.json";
@@ -101,7 +101,8 @@
         .then(result =>{
           return result.data
         })
-      d3.json("https://gist.githubusercontent.com/weirdyang/78e1d0bc7bdf8df0dee882a29cba4220/raw/c17bd6ed254c2195131b635d60b988d57c7633c1/gistfile1.json", function(error, json) {
+      d3.json("https://gist.githubusercontent.com/weirdyang/78e1d0bc7bdf8df0dee882a29cba4220/raw/6e7a67cefa6858903dee6283f0d52cae44780c18/test.json", 
+      function(error, json) {
         if (error) throw error;
         console.log(new Date(json[0].created_utc *1000));
         var line = d3.line()
@@ -152,6 +153,16 @@
             data: { x: "4/7/2020"} //position the x based on an x scale
           },
           {
+            note: { label: "Moving into Phase 2", wrap: 100},
+            subject: {
+              y1: margin.top,
+              y2: height - margin.bottom
+            },
+            y: margin.top,
+            dx: -50,
+            data: { x: "6/19/2020"}
+          },
+          {
             note: { label: "MOM: Companies must allow staff to work from home", wrap: 100},
             subject: {
               y1: margin.top,
@@ -162,14 +173,14 @@
             data: { x: "3/31/2020"}
           },
           {
-            note: { label: "Stock Split 2:1", 
+            note: { label: "26th October: 2175 Comments", 
               lineType:"none", 
               orientation: "leftRight", 
               "align": "middle" },
             className: "anomaly",
             type: d3.annotationCalloutCircle,
-            subject: { radius: 35 },
-            data: { x: "6/21/2000", y: 76},
+            subject: { radius: 15 },
+            data: { x: "10/26/2020", y:2175},
             dx: 40
           },
           {
@@ -178,7 +189,7 @@
             disable: ["connector"],
             subject: {
               x1: x( new Date('4/1/2020')),
-              x2: x( new Date('5/25/2020'))
+              x2: x( new Date('11/20/2020'))
             },
             x: x( new Date('4/1/2020')),
             dx: 250,
