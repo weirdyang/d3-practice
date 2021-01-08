@@ -93,11 +93,13 @@
 <body>
 	<div>
 
-		<button id="update" onclick="redraw()">update</button>
+		<button id="update" onclick="redraw()">January 2019 - April 2020</button>
 	</div>
 	<svg width=1200 height=720>
 		<text class="title" x=40 y=50>d3.annotation()</text>
+
 		<text x=40 y=80>Civil Aircraft Passengers per Month - Singapore Changi Airport</text>
+		<text id='textLabel' x=40 y=120>1980 - April 2020</text>
 	</svg>
 	<script src="https://d3js.org/d3.v4.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.12.1/d3-annotation.min.js"></script>
@@ -328,11 +330,20 @@
 			svg.select("g.annotation-group")
 				.call(makeAnnotations);
 		}
-
+		const updateButton = document.getElementById('update');
+		const textLabel = document.getElementById('textLabel');
 		let recentData = false;
-		const all = 'https://raw.githubusercontent.com/weirdyang/d3-practice/master/changi-airport/totalpassengers-full.json';
-		const recent = "https://raw.githubusercontent.com/weirdyang/d3-practice/master/changi-airport/totalpassengers-1920.json"
-		d3.json(all, function (error, json) {
+		const all = { 
+			data : 'https://raw.githubusercontent.com/weirdyang/d3-practice/master/changi-airport/totalpassengers-full.json',
+			text : 'January 2019 - April 2020',
+			alt : '1980 - April 2020'
+		};
+		const recent = {
+			data: "https://raw.githubusercontent.com/weirdyang/d3-practice/master/changi-airport/totalpassengers-1920.json",
+			alt : 'January 2019 - April 2020',
+			text : '1980 - April 2020'
+		};
+		d3.json(all.data, function (error, json) {
 			if (error) throw error;
 			formatDate(json);
 			drawAxis(json);
@@ -342,12 +353,15 @@
 		});
 
 		const redraw = function () {
-			let dataUrl = recentData ? all : recent;
-			fetchData(dataUrl)
+			let currentData = recentData ? all : recent;
+			fetchData(currentData.data)
 				.then(data => {
 					console.log(data);
 					formatDate(data);
 					redrawChart(data);
+					updateButton.innerHTML = currentData.text;
+					textLabel.innerHTML = currentData.alt;
+
 				})
 			recentData = !recentData;
 		}
