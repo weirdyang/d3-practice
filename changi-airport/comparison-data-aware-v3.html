@@ -129,7 +129,7 @@
 
 		svg.append('g')
 			.attr('class', 'tool-tip');
-		const url = "https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-1920.json";
+		const url = "https://raw.githubusercontent.com/weirdyang/d3-practice/master/changi-airport/totalpassengers-1920.json";
 
 		//code to add point of focus;
 
@@ -330,8 +330,8 @@
 		}
 
 		let recentData = false;
-		const all = 'https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-full.json';
-		const recent = "https://raw.githubusercontent.com/captmomo/d3-practice/master/changi-airport/totalpassengers-1920.json"
+		const all = 'https://raw.githubusercontent.com/weirdyang/d3-practice/master/changi-airport/totalpassengers-full.json';
+		const recent = "https://raw.githubusercontent.com/weirdyang/d3-practice/master/changi-airport/totalpassengers-1920.json"
 		d3.json(all, function (error, json) {
 			if (error) throw error;
 			formatDate(json);
